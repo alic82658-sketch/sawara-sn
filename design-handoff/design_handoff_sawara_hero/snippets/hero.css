@@ -1,0 +1,338 @@
+/* =============================================================
+   Sawara Entreprise — Hero stylesheet
+   Includes: design tokens, base reset, header, hero, credibility card,
+   rotating-word styles. Wire alongside snippets/hero.html.
+   ============================================================= */
+
+/* ---------- 1. Design tokens ---------- */
+:root{
+  --green-900:#0F2E20;
+  --green-800:#143A2A;
+  --green-700:#1C4D38;
+  --green-600:#27684D;
+  --green-500:#7BC042;
+  --green-400:#92CE5C;
+  --green-200:#D6ECC1;
+  --green-100:#EEF6E8;
+  --green-50:#F6FBF1;
+  --ivory:#FAFAF7;
+  --paper:#FFFFFF;
+  --ink:#0B1F16;
+  --ink-2:#3A4A41;
+  --ink-3:#6B7A72;
+  --line:#E7EDE5;
+  --whatsapp:#25D366;
+  --star:#F5B423;
+  --shadow-sm:0 1px 2px rgba(15,46,32,.04), 0 2px 8px rgba(15,46,32,.04);
+  --shadow-md:0 6px 16px rgba(15,46,32,.06), 0 24px 48px -16px rgba(15,46,32,.10);
+  --shadow-lg:0 12px 32px rgba(15,46,32,.10), 0 40px 80px -24px rgba(15,46,32,.16);
+  --r-sm:14px;
+  --r-md:22px;
+  --r-lg:32px;
+  --r-xl:44px;
+}
+
+/* ---------- 2. Base reset (scope to your codebase as needed) ---------- */
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{
+  background:var(--ivory);
+  color:var(--ink);
+  font-family:'Manrope',system-ui,sans-serif;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+body{overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+img,svg{display:block;max-width:100%}
+button{font:inherit;color:inherit;border:0;background:none;cursor:pointer}
+
+.display{
+  font-family:'Bricolage Grotesque',sans-serif;
+  font-weight:700;letter-spacing:-0.025em;line-height:.95;text-wrap:balance;
+}
+.eyebrow{
+  font-family:'Manrope';font-weight:600;font-size:12px;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--green-700);
+}
+
+.container{
+  width:100%;max-width:1280px;margin:0 auto;padding:0 20px;
+}
+@media (min-width:900px){.container{padding:0 40px}}
+
+
+/* ---------- 3. Rotating word ---------- */
+.rot{
+  display:inline-block;position:relative;overflow:hidden;
+  vertical-align:baseline;color:var(--green-500);
+  transition:width .45s cubic-bezier(.4,0,.2,1);
+  will-change:width;
+}
+.rot::after{
+  content:"";position:absolute;left:0;right:0;bottom:.05em;height:.10em;
+  background:var(--green-500);border-radius:3px;opacity:.85;
+  transition:transform .45s cubic-bezier(.4,0,.2,1);
+  transform-origin:left;
+}
+.rot-word{
+  display:inline-block;white-space:nowrap;font-style:italic;
+  transition:opacity .28s ease, transform .28s ease;
+}
+.rot-word.is-out{opacity:0;transform:translateY(-0.45em)}
+.rot-word.is-in {opacity:0;transform:translateY(0.45em)}
+@media (prefers-reduced-motion:reduce){
+  .rot, .rot-word{transition:none}
+  .rot-word.is-out, .rot-word.is-in{opacity:1;transform:none}
+}
+
+
+/* ---------- 4. Header ---------- */
+header.site{
+  position:sticky;top:0;z-index:50;
+  background:rgba(250,250,247,.82);
+  backdrop-filter:saturate(180%) blur(14px);
+  -webkit-backdrop-filter:saturate(180%) blur(14px);
+  border-bottom:1px solid rgba(15,46,32,.06);
+}
+.hdr{
+  display:flex;align-items:center;justify-content:space-between;
+  height:84px;gap:16px;
+}
+.brand{display:flex;align-items:center;gap:12px;font-weight:700;font-family:'Bricolage Grotesque'}
+.brand .mark{
+  width:54px;height:54px;border-radius:50%;
+  background:#fff;display:grid;place-items:center;overflow:hidden;
+  box-shadow:0 2px 4px rgba(15,46,32,.08), inset 0 0 0 1px var(--line);
+  flex-shrink:0;
+}
+.brand .mark img{width:130%;height:130%;object-fit:contain;object-position:center 35%}
+.brand .word{font-size:21px;line-height:1;letter-spacing:-.02em;color:var(--green-900)}
+.brand .word small{
+  display:block;font-family:'Manrope';font-weight:500;font-size:10.5px;
+  color:var(--ink-3);letter-spacing:.16em;text-transform:uppercase;margin-top:6px;
+}
+nav.primary{display:none}
+@media (min-width:1000px){
+  nav.primary{display:flex;gap:2px;flex:1;justify-content:center}
+  nav.primary a{
+    padding:9px 14px;border-radius:99px;font-weight:500;font-size:14px;
+    color:var(--ink-2);transition:.18s;position:relative;
+  }
+  nav.primary a:hover{color:var(--green-800)}
+  nav.primary a::after{
+    content:"";position:absolute;left:50%;bottom:4px;width:0;height:2px;
+    background:var(--green-500);border-radius:2px;transition:width .2s,left .2s;
+  }
+  nav.primary a:hover::after{width:16px;left:calc(50% - 8px)}
+}
+.hdr-cta{display:flex;align-items:center;gap:10px}
+.hdr-phone{display:none;font-size:13px;color:var(--ink-3);font-weight:500}
+@media (min-width:1200px){.hdr-phone{display:flex;align-items:center;gap:6px}}
+.hdr-phone svg{width:14px;height:14px;color:var(--green-700)}
+.wa-btn{
+  display:inline-flex;align-items:center;gap:8px;
+  background:var(--whatsapp);color:#fff;font-weight:700;font-size:14px;
+  padding:11px 18px;border-radius:99px;
+  box-shadow:0 6px 16px rgba(37,211,102,.32);
+  transition:transform .15s ease, box-shadow .2s;
+  white-space:nowrap;
+}
+.wa-btn:hover{transform:translateY(-1px);box-shadow:0 10px 22px rgba(37,211,102,.38)}
+.wa-btn svg{width:16px;height:16px}
+.wa-btn .label-long{display:none}
+@media (min-width:520px){
+  .wa-btn .label-long{display:inline}
+  .wa-btn .label-short{display:none}
+}
+
+
+/* ---------- 5. Hero layout ---------- */
+.hero{position:relative;padding:36px 0 24px;overflow:hidden}
+.hero-grid{display:grid;gap:28px;grid-template-columns:1fr}
+@media (min-width:1000px){
+  .hero{padding:60px 0 40px}
+  .hero-grid{grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
+}
+
+
+/* ---------- 6. Hero badges ---------- */
+.hero .badges{display:flex;flex-wrap:wrap;gap:8px}
+.hero .badge{
+  display:inline-flex;align-items:center;gap:8px;
+  background:#fff;border:1px solid var(--line);
+  padding:7px 14px;border-radius:99px;
+  font-size:12.5px;color:var(--ink-2);font-weight:500;
+  box-shadow:var(--shadow-sm);white-space:nowrap;
+}
+.hero .badge .dot{
+  width:8px;height:8px;border-radius:50%;background:var(--green-500);
+  box-shadow:0 0 0 4px var(--green-100);flex-shrink:0;
+}
+.hero .badge strong{color:var(--ink);font-weight:700}
+
+
+/* ---------- 7. Hero H1 ---------- */
+.hero h1{
+  font-family:'Bricolage Grotesque';font-weight:700;letter-spacing:-.025em;line-height:1.05;
+  font-size:clamp(30px,3.9vw,50px);
+  color:var(--green-900);
+  margin-top:18px;
+  text-wrap:balance;
+}
+
+
+/* ---------- 8. Hero subtitle ---------- */
+.hero p.lede{
+  margin-top:22px;font-size:17px;line-height:1.55;
+  color:var(--ink-2);max-width:560px;
+}
+@media (min-width:1000px){.hero p.lede{font-size:18.5px}}
+
+
+/* ---------- 9. CTAs ---------- */
+.hero .cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn-primary{
+  display:inline-flex;align-items:center;gap:10px;
+  background:var(--whatsapp);color:#fff;font-weight:700;font-size:15px;
+  padding:16px 22px;border-radius:99px;
+  box-shadow:0 10px 24px rgba(37,211,102,.30), inset 0 1px 0 rgba(255,255,255,.2);
+  transition:transform .15s, box-shadow .2s;
+}
+.btn-primary:hover{transform:translateY(-1px);box-shadow:0 14px 30px rgba(37,211,102,.38)}
+.btn-primary svg{width:18px;height:18px}
+.btn-ghost{
+  display:inline-flex;align-items:center;gap:10px;
+  background:#fff;color:var(--green-800);font-weight:600;font-size:15px;
+  padding:15px 22px;border-radius:99px;border:1px solid var(--line);
+  transition:.2s;
+}
+.btn-ghost:hover{border-color:var(--green-500);background:var(--green-50)}
+
+
+/* ---------- 10. Credibility card (hero-visual) ---------- */
+.hero-visual{position:relative;width:100%}
+.cred-card{
+  background:#fff;border-radius:var(--r-xl);overflow:hidden;
+  box-shadow:0 30px 60px -24px rgba(20,58,42,.22), 0 2px 6px rgba(20,58,42,.06);
+  border:1px solid var(--line);
+  position:relative;
+}
+
+/* Dark green header */
+.cred-head{
+  background:var(--green-800);color:#fff;
+  padding:22px 26px;position:relative;overflow:hidden;
+}
+.cred-head::before{
+  content:"";position:absolute;right:-100px;bottom:-100px;
+  width:260px;height:260px;border-radius:50%;
+  background:radial-gradient(circle, rgba(123,192,66,.28), transparent 65%);
+  pointer-events:none;
+}
+.cred-head .eye{
+  font-family:'Manrope';font-weight:600;font-size:11px;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--green-400);display:flex;align-items:center;gap:10px;
+  position:relative;z-index:1;
+}
+.cred-head .eye::before{content:"";width:22px;height:1px;background:var(--green-400)}
+.cred-head h3{
+  margin-top:10px;font-family:'Bricolage Grotesque';font-weight:700;font-size:22px;
+  letter-spacing:-.01em;line-height:1.15;position:relative;z-index:1;color:#fff;
+}
+.cred-head h3 b{color:var(--green-400)}
+
+/* Body */
+.cred-body{
+  padding:18px 22px 14px;
+  display:flex;flex-direction:column;gap:14px;
+}
+
+/* PROMINENT Google proof block */
+.cred-google{
+  background:linear-gradient(135deg, var(--green-100) 0%, var(--green-50) 100%);
+  border-radius:var(--r-md);
+  padding:18px;
+  display:flex;align-items:center;gap:18px;
+  position:relative;overflow:hidden;
+  border:1px solid var(--green-200);
+}
+.cred-google::before{
+  content:"";position:absolute;right:-50px;top:-50px;
+  width:140px;height:140px;border-radius:50%;
+  background:radial-gradient(circle, rgba(123,192,66,.20), transparent 70%);
+  pointer-events:none;
+}
+.cred-google .rating{
+  position:relative;z-index:1;
+  display:flex;flex-direction:column;align-items:flex-start;gap:4px;flex-shrink:0;
+  padding-right:18px;border-right:1px solid var(--green-200);
+}
+.cred-google .rating .num{
+  font-family:'Bricolage Grotesque';font-weight:700;font-size:40px;
+  color:var(--green-900);letter-spacing:-.03em;line-height:1;
+  display:flex;align-items:baseline;gap:3px;
+}
+.cred-google .rating .num small{font-size:18px;color:var(--green-700);font-weight:600;letter-spacing:0}
+.cred-google .rating .stars{color:var(--star);font-size:15px;letter-spacing:0;line-height:1}
+.cred-google .info{position:relative;z-index:1;flex:1;min-width:0}
+.cred-google .info .lbl{
+  font-family:'Manrope';font-weight:700;font-size:11px;
+  letter-spacing:.18em;text-transform:uppercase;color:var(--green-700);
+  display:flex;align-items:center;gap:6px;
+}
+.cred-google .info .lbl .check{
+  width:14px;height:14px;border-radius:50%;background:var(--green-500);color:#fff;
+  display:inline-grid;place-items:center;font-size:9px;flex-shrink:0;
+}
+.cred-google .info h4{
+  font-family:'Bricolage Grotesque';font-weight:700;font-size:19px;
+  color:var(--green-900);letter-spacing:-.015em;line-height:1.15;margin-top:6px;
+}
+.cred-google .info .who{font-size:12px;color:var(--ink-3);font-weight:500;margin-top:4px;line-height:1.4}
+
+/* Compact downgrade around 1000–1100 px to keep card from cramping */
+@media (max-width:1100px) and (min-width:1000px){
+  .cred-google{padding:14px}
+  .cred-google .rating{padding-right:14px}
+  .cred-google .rating .num{font-size:34px}
+}
+
+/* Compact proof rows */
+.cred-item{
+  display:flex;align-items:center;gap:14px;
+  padding:12px 4px;border-bottom:1px solid var(--line);
+}
+.cred-item:last-child{border-bottom:0}
+.cred-item .ic{
+  width:38px;height:38px;border-radius:12px;background:var(--green-100);
+  display:grid;place-items:center;color:var(--green-700);flex-shrink:0;
+}
+.cred-item .ic svg{width:18px;height:18px}
+.cred-item .txt{flex:1;min-width:0}
+.cred-item .ttl{
+  font-family:'Bricolage Grotesque';font-weight:700;font-size:15px;
+  color:var(--green-900);letter-spacing:-.005em;line-height:1.2;
+}
+.cred-item .sub{font-size:12.5px;color:var(--ink-3);font-weight:500;line-height:1.4;margin-top:2px}
+.cred-item .meta{flex-shrink:0;display:flex;align-items:center;gap:4px}
+.cred-item .stars-row{color:var(--star);letter-spacing:-1px;font-size:14px;line-height:1}
+.cred-item .big-num{
+  font-family:'Bricolage Grotesque';font-weight:700;font-size:20px;
+  color:var(--green-700);letter-spacing:-.02em;
+}
+
+/* Footer card */
+.cred-foot{
+  background:var(--green-50);padding:14px 22px;
+  display:flex;align-items:center;justify-content:space-between;gap:10px;
+  border-top:1px solid var(--line);
+}
+.cred-foot .label{
+  font-size:11.5px;color:var(--ink-3);font-weight:600;
+  letter-spacing:.06em;text-transform:uppercase;
+}
+.cred-foot a{
+  font-size:13px;color:var(--green-700);font-weight:700;
+  display:inline-flex;align-items:center;gap:4px;
+}
+.cred-foot a:hover{color:var(--green-900)}

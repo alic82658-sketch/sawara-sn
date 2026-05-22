@@ -1,0 +1,1203 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sawara Entreprise — Désinsectisation, dératisation et nettoyage professionnel à Dakar</title>
+<meta name="description" content="Sawara Entreprise, basée à Dakar : désinsectisation, désinfection, dératisation, nettoyage professionnel et vente de solutions anti-nuisibles (terre de diatomée, pièges à souris, seringues anti-cafards, insecticides anti-fourmis). 6+ ans d'expérience, 4,9/5 sur Google.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Sawara Entreprise",
+  "image": "assets/sawara-icon.png",
+  "description": "Sawara Entreprise est une entreprise basée à Dakar spécialisée dans la désinsectisation, la désinfection, la dératisation, le nettoyage professionnel et la vente de solutions anti-nuisibles comme la terre de diatomée, les pièges à souris, les seringues anti-cafards et les insecticides anti-fourmis.",
+  "address": {"@type": "PostalAddress", "addressLocality": "Dakar", "addressCountry": "SN"},
+  "telephone": "+221775526419",
+  "url": "https://www.sawara-entreprise.com",
+  "areaServed": "Dakar et banlieue",
+  "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "100"},
+  "openingHours": "Mo-Sa 08:00-19:00",
+  "makesOffer": [
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Désinsectisation"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Désinfection"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Dératisation"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Nettoyage professionnel"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Nettoyage climatisation à l'azote"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Terre de diatomée"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Pièges à souris"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Seringues anti-cafards"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Insecticides anti-fourmis"}}
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --green-900:#0F2E20;
+    --green-800:#143A2A;
+    --green-700:#1C4D38;
+    --green-600:#27684D;
+    --green-500:#7BC042;
+    --green-400:#92CE5C;
+    --green-200:#D6ECC1;
+    --green-100:#EEF6E8;
+    --green-50:#F6FBF1;
+    --ivory:#FAFAF7;
+    --paper:#FFFFFF;
+    --ink:#0B1F16;
+    --ink-2:#3A4A41;
+    --ink-3:#6B7A72;
+    --line:#E7EDE5;
+    --whatsapp:#25D366;
+    --star:#F5B423;
+    --shadow-sm:0 1px 2px rgba(15,46,32,.04), 0 2px 8px rgba(15,46,32,.04);
+    --shadow-md:0 6px 16px rgba(15,46,32,.06), 0 24px 48px -16px rgba(15,46,32,.10);
+    --shadow-lg:0 12px 32px rgba(15,46,32,.10), 0 40px 80px -24px rgba(15,46,32,.16);
+    --r-sm:14px;
+    --r-md:22px;
+    --r-lg:32px;
+    --r-xl:44px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:var(--ivory);color:var(--ink);font-family:'Manrope',system-ui,sans-serif;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  body{overflow-x:hidden}
+  a{color:inherit;text-decoration:none}
+  img,svg{display:block;max-width:100%}
+  button{font:inherit;color:inherit;border:0;background:none;cursor:pointer}
+
+  .display{font-family:'Bricolage Grotesque',sans-serif;font-weight:700;letter-spacing:-0.025em;line-height:.95;text-wrap:balance}
+  .eyebrow{font-family:'Manrope';font-weight:600;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--green-700)}
+
+  .container{width:100%;max-width:1280px;margin:0 auto;padding:0 20px}
+  @media (min-width:900px){.container{padding:0 40px}}
+
+  /* Rotating word */
+  .rot{
+    display:inline-block;position:relative;overflow:hidden;
+    vertical-align:baseline;color:var(--green-500);
+    transition:width .45s cubic-bezier(.4,0,.2,1);
+    will-change:width;
+  }
+  .rot::after{
+    content:"";position:absolute;left:0;right:0;bottom:.05em;height:.10em;
+    background:var(--green-500);border-radius:3px;opacity:.85;
+    transition:transform .45s cubic-bezier(.4,0,.2,1);
+    transform-origin:left;
+  }
+  .rot-word{
+    display:inline-block;white-space:nowrap;font-style:italic;
+    transition:opacity .28s ease, transform .28s ease;
+  }
+  .rot-word.is-out{opacity:0;transform:translateY(-0.45em)}
+  .rot-word.is-in{opacity:0;transform:translateY(0.45em)}
+  @media (prefers-reduced-motion:reduce){
+    .rot, .rot-word{transition:none}
+    .rot-word.is-out, .rot-word.is-in{opacity:1;transform:none}
+  }
+
+  /* ======================= HEADER ======================= */
+  header.site{
+    position:sticky;top:0;z-index:50;
+    background:rgba(250,250,247,.82);
+    backdrop-filter:saturate(180%) blur(14px);
+    -webkit-backdrop-filter:saturate(180%) blur(14px);
+    border-bottom:1px solid rgba(15,46,32,.06);
+  }
+  .hdr{display:flex;align-items:center;justify-content:space-between;height:84px;gap:16px}
+  .brand{display:flex;align-items:center;gap:12px;font-weight:700;font-family:'Bricolage Grotesque'}
+  .brand .mark{
+    width:54px;height:54px;border-radius:50%;
+    background:#fff;
+    display:grid;place-items:center;
+    overflow:hidden;
+    box-shadow:0 2px 4px rgba(15,46,32,.08), inset 0 0 0 1px var(--line);
+    flex-shrink:0;
+  }
+  .brand .mark img{width:130%;height:130%;object-fit:contain;object-position:center 35%}
+  .brand .word{font-size:21px;line-height:1;letter-spacing:-.02em;color:var(--green-900)}
+  .brand .word small{display:block;font-family:'Manrope';font-weight:500;font-size:10.5px;color:var(--ink-3);letter-spacing:.16em;text-transform:uppercase;margin-top:6px}
+  nav.primary{display:none}
+  @media (min-width:1000px){
+    nav.primary{display:flex;gap:2px;flex:1;justify-content:center}
+    nav.primary a{padding:9px 14px;border-radius:99px;font-weight:500;font-size:14px;color:var(--ink-2);transition:.18s;position:relative}
+    nav.primary a:hover{color:var(--green-800)}
+    nav.primary a::after{content:"";position:absolute;left:50%;bottom:4px;width:0;height:2px;background:var(--green-500);border-radius:2px;transition:width .2s,left .2s}
+    nav.primary a:hover::after{width:16px;left:calc(50% - 8px)}
+  }
+  .hdr-cta{display:flex;align-items:center;gap:10px}
+  .hdr-phone{display:none;font-size:13px;color:var(--ink-3);font-weight:500}
+  @media (min-width:1200px){.hdr-phone{display:flex;align-items:center;gap:6px}}
+  .hdr-phone svg{width:14px;height:14px;color:var(--green-700)}
+  .wa-btn{
+    display:inline-flex;align-items:center;gap:8px;
+    background:var(--whatsapp);color:#fff;font-weight:700;font-size:14px;
+    padding:11px 18px;border-radius:99px;
+    box-shadow:0 6px 16px rgba(37,211,102,.32);
+    transition:transform .15s ease, box-shadow .2s;
+    white-space:nowrap;
+  }
+  .wa-btn:hover{transform:translateY(-1px);box-shadow:0 10px 22px rgba(37,211,102,.38)}
+  .wa-btn svg{width:16px;height:16px}
+  .wa-btn .label-long{display:none}
+  @media (min-width:520px){.wa-btn .label-long{display:inline}.wa-btn .label-short{display:none}}
+
+  /* ======================= HERO ======================= */
+  .hero{position:relative;padding:36px 0 24px;overflow:hidden}
+  .hero-grid{display:grid;gap:28px;grid-template-columns:1fr}
+  @media (min-width:1000px){
+    .hero{padding:60px 0 40px}
+    .hero-grid{grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
+  }
+  .hero .badges{display:flex;flex-wrap:wrap;gap:8px}
+  .hero .badge{
+    display:inline-flex;align-items:center;gap:8px;
+    background:#fff;border:1px solid var(--line);
+    padding:7px 14px;border-radius:99px;font-size:12.5px;color:var(--ink-2);font-weight:500;
+    box-shadow:var(--shadow-sm);white-space:nowrap;
+  }
+  .hero .badge .dot{width:7px;height:7px;border-radius:50%;background:var(--green-500);box-shadow:0 0 0 4px var(--green-100);flex-shrink:0}
+  .hero .badge strong{color:var(--ink);font-weight:700}
+  .hero .badge .dot{width:8px;height:8px;border-radius:50%;background:var(--green-500);box-shadow:0 0 0 4px var(--green-100)}
+  .hero .badge strong{color:var(--ink);font-weight:700}
+  .hero h1{
+    font-family:'Bricolage Grotesque';font-weight:700;letter-spacing:-.025em;line-height:1.05;
+    font-size:clamp(30px,3.9vw,50px);
+    color:var(--green-900);
+    margin-top:18px;
+    text-wrap:balance;
+  }
+  .hero h1 em{font-style:normal;color:var(--green-500);position:relative;white-space:nowrap}
+  .hero h1 .underline{
+    background-image:linear-gradient(var(--green-500),var(--green-500));
+    background-repeat:no-repeat;background-size:100% 14%;background-position:0 96%;
+    padding:0 .04em;
+  }
+  .hero p.lede{
+    margin-top:22px;font-size:17px;line-height:1.55;color:var(--ink-2);max-width:560px;
+  }
+  @media (min-width:1000px){.hero p.lede{font-size:18.5px}}
+  .hero .cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+  .btn-primary{
+    display:inline-flex;align-items:center;gap:10px;
+    background:var(--whatsapp);color:#fff;font-weight:700;font-size:15px;
+    padding:16px 22px;border-radius:99px;
+    box-shadow:0 10px 24px rgba(37,211,102,.30), inset 0 1px 0 rgba(255,255,255,.2);
+    transition:transform .15s, box-shadow .2s;
+  }
+  .btn-primary:hover{transform:translateY(-1px);box-shadow:0 14px 30px rgba(37,211,102,.38)}
+  .btn-primary svg{width:18px;height:18px}
+  .btn-ghost{
+    display:inline-flex;align-items:center;gap:10px;
+    background:#fff;color:var(--green-800);font-weight:600;font-size:15px;
+    padding:15px 22px;border-radius:99px;border:1px solid var(--line);
+    transition:.2s;
+  }
+  .btn-ghost:hover{border-color:var(--green-500);background:var(--green-50)}
+
+  .trust-row{display:grid;gap:14px;margin-top:36px;grid-template-columns:repeat(2,minmax(0,1fr))}
+  @media (min-width:560px){.trust-row{grid-template-columns:repeat(4,minmax(0,1fr))}}
+  .trust{display:flex;flex-direction:column;gap:4px;padding:14px 0;border-top:1px solid var(--line)}
+  .trust .num{font-family:'Bricolage Grotesque';font-weight:700;font-size:28px;color:var(--green-800);letter-spacing:-.02em;line-height:1}
+  .trust .num .star{color:var(--star);font-size:18px;vertical-align:2px;margin-left:2px}
+  .trust .lbl{font-size:12.5px;color:var(--ink-3);font-weight:500;line-height:1.3}
+
+  /* Hero visual — single premium credibility card */
+  .hero-visual{position:relative;width:100%}
+  .cred-card{
+    background:#fff;border-radius:var(--r-xl);overflow:hidden;
+    box-shadow:0 30px 60px -24px rgba(20,58,42,.22), 0 2px 6px rgba(20,58,42,.06);
+    border:1px solid var(--line);
+    position:relative;
+  }
+  .cred-head{
+    background:var(--green-800);color:#fff;
+    padding:22px 26px;position:relative;overflow:hidden;
+  }
+  .cred-head::before{
+    content:"";position:absolute;right:-100px;bottom:-100px;width:260px;height:260px;border-radius:50%;
+    background:radial-gradient(circle, rgba(123,192,66,.28), transparent 65%);pointer-events:none;
+  }
+  .cred-head .eye{
+    font-family:'Manrope';font-weight:600;font-size:11px;letter-spacing:.18em;text-transform:uppercase;
+    color:var(--green-400);display:flex;align-items:center;gap:10px;position:relative;z-index:1;
+  }
+  .cred-head .eye::before{content:"";width:22px;height:1px;background:var(--green-400)}
+  .cred-head h3{
+    margin-top:10px;font-family:'Bricolage Grotesque';font-weight:700;font-size:22px;letter-spacing:-.01em;
+    line-height:1.15;position:relative;z-index:1;color:#fff;
+  }
+  .cred-head h3 b{color:var(--green-400)}
+
+  .cred-body{padding:18px 22px 14px;display:flex;flex-direction:column;gap:14px}
+
+  /* Big Google proof block */
+  .cred-google{
+    background:linear-gradient(135deg, var(--green-100) 0%, var(--green-50) 100%);
+    border-radius:var(--r-md);
+    padding:18px 18px;display:flex;align-items:center;gap:18px;
+    position:relative;overflow:hidden;
+    border:1px solid var(--green-200);
+  }
+  .cred-google::before{
+    content:"";position:absolute;right:-50px;top:-50px;width:140px;height:140px;border-radius:50%;
+    background:radial-gradient(circle, rgba(123,192,66,.20), transparent 70%);pointer-events:none;
+  }
+  .cred-google .rating{
+    position:relative;z-index:1;display:flex;flex-direction:column;align-items:flex-start;gap:4px;flex-shrink:0;
+    padding-right:18px;border-right:1px solid var(--green-200);
+  }
+  .cred-google .rating .num{font-family:'Bricolage Grotesque';font-weight:700;font-size:40px;color:var(--green-900);letter-spacing:-.03em;line-height:1;display:flex;align-items:baseline;gap:3px}
+  .cred-google .rating .num small{font-size:18px;color:var(--green-700);font-weight:600;letter-spacing:0}
+  .cred-google .rating .stars{color:var(--star);font-size:15px;letter-spacing:0;line-height:1}
+  .cred-google .info{position:relative;z-index:1;flex:1;min-width:0}
+  .cred-google .info .lbl{font-family:'Manrope';font-weight:700;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--green-700);display:flex;align-items:center;gap:6px}
+  .cred-google .info .lbl .check{width:14px;height:14px;border-radius:50%;background:var(--green-500);color:#fff;display:inline-grid;place-items:center;font-size:9px;flex-shrink:0}
+  .cred-google .info h4{font-family:'Bricolage Grotesque';font-weight:700;font-size:19px;color:var(--green-900);letter-spacing:-.015em;line-height:1.15;margin-top:6px}
+  .cred-google .info .who{font-size:12px;color:var(--ink-3);font-weight:500;margin-top:4px;line-height:1.4}
+
+  @media (max-width:1100px) and (min-width:1000px){
+    .cred-google{padding:14px}
+    .cred-google .rating{padding-right:14px}
+    .cred-google .rating .num{font-size:34px}
+  }
+
+  .cred-item{
+    display:flex;align-items:center;gap:14px;
+    padding:12px 4px;border-bottom:1px solid var(--line);
+  }
+  .cred-item:last-child{border-bottom:0}
+  .cred-item .ic{
+    width:38px;height:38px;border-radius:12px;background:var(--green-100);
+    display:grid;place-items:center;color:var(--green-700);flex-shrink:0;
+  }
+  .cred-item .ic svg{width:18px;height:18px}
+  .cred-item .txt{flex:1;min-width:0}
+  .cred-item .ttl{font-family:'Bricolage Grotesque';font-weight:700;font-size:15px;color:var(--green-900);letter-spacing:-.005em;line-height:1.2}
+  .cred-item .sub{font-size:12.5px;color:var(--ink-3);font-weight:500;line-height:1.4;margin-top:2px}
+  .cred-item .meta{flex-shrink:0;display:flex;align-items:center;gap:4px}
+  .cred-item .stars-row{color:var(--star);letter-spacing:-1px;font-size:14px;line-height:1}
+  .cred-item .big-num{font-family:'Bricolage Grotesque';font-weight:700;font-size:20px;color:var(--green-700);letter-spacing:-.02em}
+
+  .cred-foot{
+    background:var(--green-50);padding:14px 22px;display:flex;align-items:center;justify-content:space-between;gap:10px;
+    border-top:1px solid var(--line);
+  }
+  .cred-foot .label{font-size:11.5px;color:var(--ink-3);font-weight:600;letter-spacing:.06em;text-transform:uppercase}
+  .cred-foot a{font-size:13px;color:var(--green-700);font-weight:700;display:inline-flex;align-items:center;gap:4px}
+  .cred-foot a:hover{color:var(--green-900)}
+
+  .float-card{display:none}
+
+  /* ======================= REFERENCES STRIP ======================= */
+  .refs{padding:18px 0 8px}
+  .refs-wrap{
+    background:#fff;border:1px solid var(--line);border-radius:var(--r-lg);
+    padding:18px 20px;display:flex;flex-direction:column;gap:14px;
+    box-shadow:var(--shadow-sm);
+  }
+  @media (min-width:900px){
+    .refs-wrap{flex-direction:row;align-items:center;padding:20px 28px;gap:28px}
+  }
+  .refs-wrap .lbl{font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);white-space:nowrap}
+  .refs-list{display:flex;flex-wrap:wrap;gap:18px 28px;align-items:center;flex:1}
+  .refs-list .item{font-family:'Bricolage Grotesque';font-weight:700;color:var(--ink);font-size:18px;letter-spacing:-.01em;opacity:.78}
+  .refs-list .item.it-eiffage{font-family:'Manrope';font-weight:800;letter-spacing:.04em}
+  .refs-list .item.it-embassy::before{content:"\25C6";color:var(--green-500);margin-right:8px;font-size:14px;vertical-align:1px}
+  .refs-note{font-size:13px;color:var(--ink-3);font-weight:500;white-space:nowrap;transition:color .2s}
+  .refs-note:hover{color:var(--green-700)}
+
+  /* ======================= VISUAL BLOCK (dark green) ======================= */
+  .vblock{padding:48px 0 24px}
+  .vblock-inner{
+    position:relative;background:var(--green-800);color:#fff;border-radius:var(--r-xl);
+    padding:48px 28px;overflow:hidden;
+  }
+  @media (min-width:900px){.vblock-inner{padding:72px 64px}}
+  .vblock-inner::after{
+    content:"";position:absolute;right:-120px;bottom:-180px;width:520px;height:520px;
+    border-radius:50%;background:radial-gradient(circle, var(--green-600), transparent 65%);
+    opacity:.7;pointer-events:none;
+  }
+  .vblock-inner::before{
+    content:"";position:absolute;left:-80px;top:-80px;width:260px;height:260px;
+    border-radius:50%;background:radial-gradient(circle, rgba(123,192,66,.28), transparent 70%);
+    pointer-events:none;
+  }
+  .vblock-head{position:relative;z-index:1;display:flex;flex-direction:column;gap:14px;max-width:760px;margin-bottom:36px}
+  .vblock-head .eyebrow{color:var(--green-400)}
+  .vblock-head h2{
+    font-family:'Bricolage Grotesque';font-weight:700;letter-spacing:-.025em;
+    font-size:clamp(32px,5vw,52px);line-height:1;
+  }
+  .vblock-stats{
+    position:relative;z-index:1;display:grid;gap:18px;
+    grid-template-columns:repeat(2,1fr);
+  }
+  @media (min-width:760px){.vblock-stats{grid-template-columns:repeat(4,1fr);gap:28px}}
+  .stat{padding:24px 0;border-top:1px solid rgba(255,255,255,.18)}
+  .stat .num{font-family:'Bricolage Grotesque';font-weight:700;font-size:clamp(40px,6vw,64px);line-height:.95;letter-spacing:-.03em;color:#fff;display:flex;align-items:baseline;gap:4px}
+  .stat .num span{font-size:.5em;color:var(--green-400)}
+  .stat .lbl{margin-top:8px;font-size:14px;color:rgba(255,255,255,.7);font-weight:500;line-height:1.4}
+
+  /* ======================= POURQUOI ======================= */
+  .why{padding:64px 0 40px}
+  .section-head{display:flex;flex-direction:column;gap:14px;max-width:760px;margin-bottom:36px}
+  @media (min-width:900px){.section-head{margin-bottom:48px}}
+  .section-head h2{font-family:'Bricolage Grotesque';font-weight:700;letter-spacing:-.025em;font-size:clamp(34px,5vw,56px);line-height:1;color:var(--green-900)}
+  .section-head p{color:var(--ink-2);font-size:17px;line-height:1.55;max-width:600px}
+
+  .why-grid{display:grid;gap:14px;grid-template-columns:1fr}
+  @media (min-width:720px){.why-grid{grid-template-columns:repeat(2,1fr)}}
+  @media (min-width:1100px){.why-grid{grid-template-columns:repeat(3,1fr)}}
+
+  .why-card{
+    background:#fff;border:1px solid var(--line);border-radius:var(--r-lg);padding:26px 24px;
+    display:flex;flex-direction:column;gap:14px;transition:.25s;position:relative;overflow:hidden;
+  }
+  .why-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-md);border-color:transparent}
+  .why-card .icn{
+    width:52px;height:52px;border-radius:18px;background:var(--green-100);
+    display:grid;place-items:center;color:var(--green-700);
+  }
+  .why-card .icn svg{width:24px;height:24px}
+  .why-card h3{font-family:'Bricolage Grotesque';font-weight:700;font-size:21px;color:var(--green-900);letter-spacing:-.015em;line-height:1.15}
+  .why-card p{color:var(--ink-2);font-size:14.5px;line-height:1.55}
+  .why-card.featured{background:var(--green-800);color:#fff;border-color:transparent}
+  .why-card.featured h3{color:#fff}
+  .why-card.featured p{color:rgba(255,255,255,.78)}
+  .why-card.featured .icn{background:var(--green-500);color:var(--green-900)}
+  .why-card.featured::after{
+    content:"";position:absolute;right:-60px;bottom:-60px;width:200px;height:200px;border-radius:50%;
+    background:radial-gradient(circle, rgba(123,192,66,.25), transparent 70%);
+  }
+
+  /* ======================= SERVICES ======================= */
+  .services{padding:48px 0 80px}
+  .svc-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:36px;flex-wrap:wrap}
+  .svc-grid{display:grid;gap:14px;grid-template-columns:1fr}
+  @media (min-width:640px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
+  @media (min-width:1000px){.svc-grid{grid-template-columns:repeat(3,1fr);grid-auto-rows:minmax(220px,auto)}}
+  .svc{
+    background:#fff;border:1px solid var(--line);border-radius:var(--r-lg);
+    padding:24px;display:flex;flex-direction:column;gap:16px;
+    transition:.25s;position:relative;overflow:hidden;min-height:200px;
+  }
+  .svc:hover{transform:translateY(-3px);box-shadow:var(--shadow-md);border-color:var(--green-200)}
+  .svc .num{
+    position:absolute;top:18px;right:22px;
+    font-family:'Bricolage Grotesque';font-weight:600;font-size:13px;color:var(--ink-3);letter-spacing:.06em;
+  }
+  .svc .icn{
+    width:48px;height:48px;border-radius:16px;background:var(--green-100);
+    display:grid;place-items:center;color:var(--green-700);
+  }
+  .svc .icn svg{width:22px;height:22px}
+  .svc h3{font-family:'Bricolage Grotesque';font-weight:700;font-size:21px;color:var(--green-900);letter-spacing:-.015em;line-height:1.15;margin-top:auto}
+  .svc p{color:var(--ink-2);font-size:14px;line-height:1.5}
+  .svc .arrow{margin-top:6px;display:inline-flex;align-items:center;gap:6px;color:var(--green-700);font-weight:600;font-size:13px}
+  .svc .arrow svg{width:14px;height:14px;transition:transform .2s}
+  .svc:hover .arrow svg{transform:translateX(4px)}
+
+  /* Featured flagship service */
+  .svc.flagship{
+    background:linear-gradient(135deg,var(--green-800) 0%,var(--green-700) 100%);
+    color:#fff;border-color:transparent;
+    grid-column:span 1;
+  }
+  @media (min-width:1000px){.svc.flagship{grid-column:span 2;grid-row:span 2;flex-direction:row;align-items:flex-end;padding:36px;gap:32px}}
+  .svc.flagship h3{color:#fff;font-size:clamp(26px,3.4vw,40px);max-width:380px}
+  .svc.flagship p{color:rgba(255,255,255,.78);font-size:15px;max-width:380px}
+  .svc.flagship .num{color:rgba(255,255,255,.5)}
+  .svc.flagship .icn{background:var(--green-500);color:var(--green-900)}
+  .svc.flagship .arrow{color:var(--green-400)}
+  .svc.flagship .left{display:flex;flex-direction:column;gap:18px;flex:1;z-index:1;position:relative}
+  .svc.flagship .right{
+    position:relative;flex:1;align-self:stretch;min-height:200px;
+    background:
+      repeating-linear-gradient(45deg, rgba(255,255,255,.04) 0 14px, transparent 14px 28px),
+      radial-gradient(ellipse at center, rgba(123,192,66,.4), transparent 60%);
+    border-radius:var(--r-md);overflow:hidden;
+    display:grid;place-items:center;
+  }
+  @media (max-width:999px){.svc.flagship .right{display:none}}
+  .svc.flagship .right .tag{
+    font-family:'JetBrains Mono',monospace;font-size:11px;color:rgba(255,255,255,.75);
+    background:rgba(0,0,0,.25);padding:6px 12px;border-radius:99px;letter-spacing:.06em;
+  }
+  .svc.flagship .pill{
+    display:inline-flex;align-items:center;gap:6px;align-self:flex-start;
+    background:rgba(123,192,66,.18);color:var(--green-400);
+    padding:6px 12px;border-radius:99px;font-size:12px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;
+  }
+
+  /* ======================= PRODUCTS ======================= */
+  .products{padding:24px 0 64px}
+  .products-bg{
+    background:var(--green-100);
+    border-radius:var(--r-xl);
+    padding:56px 24px;
+    position:relative;overflow:hidden;
+  }
+  @media (min-width:900px){.products-bg{padding:72px 56px}}
+  .products-bg::before{
+    content:"";position:absolute;right:-180px;top:-180px;width:480px;height:480px;border-radius:50%;
+    background:radial-gradient(circle, rgba(123,192,66,.35), transparent 65%);pointer-events:none;
+  }
+  .products-head{margin-bottom:32px;position:relative;z-index:1}
+  .products-head h2{color:var(--green-900)}
+
+  .geo-card{
+    margin-top:18px;background:#fff;border-radius:var(--r-md);padding:20px 22px;
+    display:flex;gap:14px;align-items:flex-start;max-width:780px;
+    box-shadow:var(--shadow-sm);position:relative;z-index:1;
+  }
+  .geo-card .ic{flex-shrink:0;width:38px;height:38px;border-radius:12px;background:var(--green-100);display:grid;place-items:center;color:var(--green-700)}
+  .geo-card .ic svg{width:18px;height:18px}
+  .geo-card p{font-size:14.5px;line-height:1.55;color:var(--ink-2)}
+  .geo-card p strong{color:var(--green-900);font-weight:700}
+
+  .products-grid{position:relative;z-index:1;display:grid;gap:14px;grid-template-columns:1fr;margin-top:36px}
+  @media (min-width:640px){.products-grid{grid-template-columns:repeat(2,1fr)}}
+  @media (min-width:1000px){.products-grid{grid-template-columns:repeat(3,1fr)}}
+
+  .product{
+    background:#fff;border-radius:var(--r-lg);padding:18px;
+    display:flex;flex-direction:column;gap:14px;transition:.25s;border:1px solid transparent;
+  }
+  .product:hover{transform:translateY(-3px);box-shadow:var(--shadow-md)}
+  .product .visual{
+    position:relative;height:140px;border-radius:var(--r-md);overflow:hidden;
+    background:
+      repeating-linear-gradient(45deg, rgba(123,192,66,.10) 0 14px, transparent 14px 28px),
+      linear-gradient(135deg, var(--green-50), #fff);
+    display:grid;place-items:center;
+  }
+  .product .visual .icn{
+    width:64px;height:64px;border-radius:20px;background:#fff;
+    display:grid;place-items:center;color:var(--green-700);box-shadow:var(--shadow-md);z-index:1;
+  }
+  .product .visual .icn svg{width:28px;height:28px}
+  .product .visual .ph{
+    position:absolute;bottom:10px;right:10px;
+    font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--ink-3);
+    background:rgba(255,255,255,.85);padding:4px 8px;border-radius:99px;letter-spacing:.04em;
+  }
+  .product .tag{
+    display:inline-flex;align-items:center;align-self:flex-start;
+    background:var(--green-100);color:var(--green-800);
+    padding:5px 10px;border-radius:99px;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+  }
+  .product h3{font-family:'Bricolage Grotesque';font-weight:700;font-size:19px;color:var(--green-900);letter-spacing:-.015em;line-height:1.2}
+  .product p{font-size:13.5px;line-height:1.5;color:var(--ink-2);flex:1}
+  .product .ask{
+    display:inline-flex;align-items:center;gap:8px;
+    color:var(--green-700);font-weight:600;font-size:13px;
+    border-top:1px dashed var(--line);padding-top:12px;margin-top:auto;
+  }
+  .product .ask svg{width:14px;height:14px;transition:transform .2s}
+  .product:hover .ask svg{transform:translateX(4px)}
+
+  /* WhatsApp photo block */
+  .wa-photo{
+    position:relative;z-index:1;margin-top:28px;
+    background:var(--green-900);color:#fff;border-radius:var(--r-lg);
+    padding:28px;display:flex;flex-direction:column;gap:18px;align-items:flex-start;overflow:hidden;
+  }
+  @media (min-width:760px){.wa-photo{flex-direction:row;align-items:center;padding:32px 36px;gap:28px}}
+  .wa-photo::before{
+    content:"";position:absolute;left:-80px;bottom:-80px;width:240px;height:240px;border-radius:50%;
+    background:radial-gradient(circle, rgba(123,192,66,.3), transparent 70%);pointer-events:none;
+  }
+  .wa-photo .ic{
+    width:64px;height:64px;border-radius:20px;background:var(--green-500);color:var(--green-900);
+    display:grid;place-items:center;flex-shrink:0;position:relative;z-index:1;
+  }
+  .wa-photo .ic svg{width:28px;height:28px}
+  .wa-photo .txt{flex:1;position:relative;z-index:1}
+  .wa-photo .txt h3{font-family:'Bricolage Grotesque';font-weight:700;font-size:clamp(22px,2.6vw,28px);line-height:1.15;letter-spacing:-.015em;color:#fff}
+  .wa-photo .txt p{margin-top:6px;font-size:14.5px;color:rgba(255,255,255,.72);max-width:520px;line-height:1.5}
+  .wa-photo .btn-primary{flex-shrink:0;position:relative;z-index:1}
+
+  /* ======================= CTA BANNER ======================= */
+  .cta-banner{padding:0 0 64px}
+  .cta-inner{
+    background:var(--green-500);border-radius:var(--r-xl);padding:36px 28px;
+    display:flex;flex-direction:column;gap:18px;align-items:flex-start;position:relative;overflow:hidden;
+  }
+  @media (min-width:900px){.cta-inner{padding:56px 64px;flex-direction:row;align-items:center;justify-content:space-between}}
+  .cta-inner h2{font-family:'Bricolage Grotesque';font-weight:700;font-size:clamp(28px,3.6vw,42px);line-height:1;letter-spacing:-.025em;color:var(--green-900);max-width:620px}
+  .cta-inner p{color:var(--green-900);opacity:.78;font-size:15.5px;margin-top:8px;max-width:540px}
+  .cta-inner::after{
+    content:"";position:absolute;right:-100px;top:-100px;width:320px;height:320px;border-radius:50%;
+    background:radial-gradient(circle, rgba(255,255,255,.22), transparent 65%);pointer-events:none;
+  }
+  .cta-inner .btn-dark{
+    background:var(--green-900);color:#fff;font-weight:700;font-size:15px;
+    padding:16px 22px;border-radius:99px;display:inline-flex;align-items:center;gap:10px;
+    transition:.2s;flex-shrink:0;
+  }
+  .cta-inner .btn-dark:hover{background:#000;transform:translateY(-1px)}
+  .cta-inner .btn-dark svg{width:18px;height:18px}
+
+  /* ======================= FOOTER ======================= */
+  footer.site{background:var(--green-900);color:rgba(255,255,255,.7);padding:48px 0 24px;border-radius:var(--r-xl) var(--r-xl) 0 0}
+  .ft-grid{display:grid;gap:32px;grid-template-columns:1fr}
+  @media (min-width:760px){.ft-grid{grid-template-columns:2fr 1fr 1fr 1fr 1fr}}
+  .ft-brand{display:flex;flex-direction:column;gap:14px;max-width:340px}
+  .ft-brand .brand .word{color:#fff}
+  .ft-brand p{font-size:14px;line-height:1.55}
+  .ft-col h4{font-family:'Bricolage Grotesque';color:#fff;font-size:14px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;margin-bottom:14px}
+  .ft-col ul{list-style:none;display:flex;flex-direction:column;gap:9px;font-size:14px}
+  .ft-col a:hover{color:var(--green-400)}
+  .ft-bottom{margin-top:36px;padding-top:20px;border-top:1px solid rgba(255,255,255,.1);display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;font-size:13px;color:rgba(255,255,255,.5)}
+
+  /* worker silhouette */
+  .silhouette{width:100%;height:auto}
+
+  /* selection */
+  ::selection{background:var(--green-500);color:#fff}
+</style>
+</head>
+<body>
+
+<!-- ========== HEADER ========== -->
+<header class="site">
+  <div class="container hdr">
+    <a href="#" class="brand" aria-label="Sawara Entreprise">
+      <span class="mark" aria-hidden="true">
+        <img src="assets/sawara-icon.png" alt="">
+      </span>
+      <span class="word">Sawara<small>Entreprise</small></span>
+    </a>
+    <nav class="primary">
+      <a href="#services">Services</a>
+      <a href="#produits">Produits</a>
+      <a href="#pourquoi">Pourquoi nous</a>
+      <a href="#references">Références</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="hdr-cta">
+      <span class="hdr-phone">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        77 552 64 19
+      </span>
+      <a href="https://wa.me/221775526419" class="wa-btn" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.2-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-.9-.5-1.7-1-2.5-2-.2-.3.2-.3.6-1 .1-.1.1-.3 0-.4-.1-.1-.7-1.6-1-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1 2.9 1.2 3.1c.1.2 2 3.1 4.9 4.4 1.7.7 2.4.8 3.3.7.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3Z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.4 5L2 22l5.1-1.3c1.5.8 3.2 1.3 4.9 1.3 5.5 0 10-4.5 10-10S17.5 2 12 2Zm0 18c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3 .8.8-2.9-.2-.3A7.96 7.96 0 0 1 4 12c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8Z"/></svg>
+        <span class="label-long">Devis WhatsApp</span>
+        <span class="label-short">WhatsApp</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- ========== HERO ========== -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-text">
+      <div class="badges">
+        <span class="badge"><span class="dot"></span>Disponible 6j/7</span>
+        <span class="badge">Devis rapide</span>
+        <span class="badge">Intervention à Dakar et au-delà</span>
+        <span class="badge"><strong>Produits anti-nuisibles disponibles</strong></span>
+      </div>
+
+      <h1 class="display">
+        Experts en désinsectisation,<br>
+        dératisation, désinfection<br>
+        &amp; traitement des <span class="rot"><span class="rot-word">cafards</span></span>.
+      </h1>
+
+      <p class="lede">Sawara Entreprise accompagne les <strong>particuliers, entreprises et institutions</strong> pour le traitement des nuisibles, la désinfection, la dératisation, le nettoyage professionnel et la <strong>vente de solutions anti-nuisibles</strong>. Intervention à Dakar et au-delà selon les besoins.</p>
+
+      <div class="cta-row">
+        <a href="https://wa.me/221775526419" class="btn-primary" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.4 5L2 22l5.1-1.3c1.5.8 3.2 1.3 4.9 1.3 5.5 0 10-4.5 10-10S17.5 2 12 2Zm5.5 12.4c-.2.7-1.4 1.3-1.9 1.4-.9.1-1.6 0-3.3-.7-2.9-1.3-4.8-4.2-4.9-4.4-.2-.2-1.2-1.6-1.2-3.1s.7-2.2 1-2.5c.3-.3.6-.4.8-.4h.6c.2 0 .5-.1.7.5.3.6.9 2.1 1 2.2.1.1.1.3 0 .4-.4.7-.8.7-.6 1 .8 1 1.6 1.5 2.5 2 .3.1.4.1.6-.1.2-.2.7-.8.9-1.1.2-.3.4-.3.7-.2.3.1 1.7.8 2 .9.3.1.5.2.6.3.1.1.1.7-.2 1.4Z"/></svg>
+          Devis rapide sur WhatsApp
+        </a>
+        <a href="#produits" class="btn-ghost">
+          Découvrir nos solutions
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 12h12M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+
+      <div class="trust-row">
+        <div class="trust">
+          <div class="num">4,9<span class="star">★</span></div>
+          <div class="lbl">Note moyenne<br>sur Google</div>
+        </div>
+        <div class="trust">
+          <div class="num">100+</div>
+          <div class="lbl">Avis clients<br>vérifiés</div>
+        </div>
+        <div class="trust">
+          <div class="num">6<span class="star" style="color:var(--green-500)">+</span></div>
+          <div class="lbl">Années<br>d'expérience</div>
+        </div>
+        <div class="trust">
+          <div class="num">9</div>
+          <div class="lbl">Spécialités<br>maîtrisées</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Visual — single premium credibility card -->
+    <div class="hero-visual">
+      <div class="cred-card">
+
+        <div class="cred-head">
+          <span class="eye">Sawara Entreprise · Crédibilité</span>
+          <h3>Une entreprise déjà <b>recommandée</b>,<br>expérimentée et reconnue.</h3>
+        </div>
+
+        <div class="cred-body">
+
+          <!-- BIG Google proof block -->
+          <div class="cred-google">
+            <div class="rating">
+              <div class="num">4,9<small>/5</small></div>
+              <span class="stars">★★★★★</span>
+            </div>
+            <div class="info">
+              <span class="lbl"><span class="check">✓</span>+100 avis vérifiés sur Google</span>
+              <h4>Note moyenne 4,9 / 5</h4>
+              <div class="who">Particuliers · Entreprises · Institutions</div>
+            </div>
+          </div>
+
+          <!-- 3 compact proof rows -->
+          <div class="cred-item">
+            <div class="ic" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 12a8.5 8.5 0 1 1-3-6.5"/><path d="M21 4v5h-5"/></svg>
+            </div>
+            <div class="txt">
+              <div class="ttl">+6 ans d'expérience</div>
+              <div class="sub">À Dakar et au-delà selon les besoins</div>
+            </div>
+            <div class="meta"><span class="big-num">6+</span></div>
+          </div>
+
+          <div class="cred-item">
+            <div class="ic" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-12V5l-8-3-8 3v5c0 8 8 12 8 12z"/><path d="m9 12 2 2 4-4"/></svg>
+            </div>
+            <div class="txt">
+              <div class="ttl">Eiffage · ONG danoise · Ambassades</div>
+              <div class="sub">Références institutionnelles vérifiables</div>
+            </div>
+          </div>
+
+          <div class="cred-item">
+            <div class="ic" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 7h8M8 11h8M8 15h5"/></svg>
+            </div>
+            <div class="txt">
+              <div class="ttl">Références professionnelles</div>
+              <div class="sub">Lettres de recommandation disponibles sur demande</div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="cred-foot">
+          <span class="label">Sénégal · Intervention selon les besoins</span>
+          <a href="https://wa.me/221775526419" target="_blank" rel="noopener">Devis rapide →</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== REFERENCES STRIP ========== -->
+<section class="refs" id="references">
+  <div class="container">
+    <div class="refs-wrap">
+      <div class="lbl">Ils nous ont fait confiance</div>
+      <div class="refs-list">
+        <div class="item it-eiffage">EIFFAGE</div>
+        <div class="item">ONG danoise</div>
+        <div class="item it-embassy">Ambassades</div>
+        <div class="item">Entreprises</div>
+        <div class="item">Particuliers</div>
+      </div>
+      <a href="#contact" class="refs-note">Références professionnelles disponibles sur demande →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ========== VISUAL BLOCK (dark green stats) ========== -->
+<section class="vblock">
+  <div class="container">
+    <div class="vblock-inner">
+      <div class="vblock-head">
+        <span class="eyebrow">Sawara en chiffres</span>
+        <h2>Une expertise locale, des standards internationaux.</h2>
+      </div>
+      <div class="vblock-stats">
+        <div class="stat">
+          <div class="num">4,9<span>/5</span></div>
+          <div class="lbl">Note Google sur 100+ avis vérifiés</div>
+        </div>
+        <div class="stat">
+          <div class="num">6<span>+</span></div>
+          <div class="lbl">Années d'expérience à Dakar et en banlieue</div>
+        </div>
+        <div class="stat">
+          <div class="num">100<span>%</span></div>
+          <div class="lbl">Produits homologués et personnel formé</div>
+        </div>
+        <div class="stat">
+          <div class="num">2<span>h</span></div>
+          <div class="lbl">Délai moyen pour un devis personnalisé</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== POURQUOI ========== -->
+<section class="why" id="pourquoi">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Pourquoi nous faire confiance ?</span>
+      <h2>Six raisons concrètes de nous confier vos locaux.</h2>
+      <p>Sawara Entreprise n'est pas un prestataire de plus. C'est une équipe rigoureuse, formée et équipée — choisie par des ambassades, des ONG et de grandes entreprises pour la fiabilité de ses interventions.</p>
+    </div>
+
+    <div class="why-grid">
+      <div class="why-card featured">
+        <div class="icn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8 5.8 21.3l2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+        </div>
+        <h3>Note moyenne 4,9/5 sur Google</h3>
+        <p>Plus de 100 avis clients vérifiés. Nous publions tous les retours — y compris ceux qui nous aident à progresser.</p>
+      </div>
+
+      <div class="why-card">
+        <div class="icn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+        </div>
+        <h3>6 ans d'expérience terrain</h3>
+        <p>Depuis 2019, nous intervenons dans tous types d'environnements : résidentiels, tertiaires, diplomatiques, industriels.</p>
+      </div>
+
+      <div class="why-card">
+        <div class="icn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M3 9h18M8 4v4M16 4v4"/></svg>
+        </div>
+        <h3>Lettres de recommandation</h3>
+        <p>Documents officiels disponibles sur demande, signés par nos clients institutionnels et entreprises partenaires.</p>
+      </div>
+
+      <div class="why-card">
+        <div class="icn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-12V5l-8-3-8 3v5c0 8 8 12 8 12z"/><path d="m9 12 2 2 4-4"/></svg>
+        </div>
+        <h3>Produits homologués</h3>
+        <p>Solutions non toxiques pour les enfants, animaux et plantes. Sécurité alimentaire respectée dans les cuisines pro.</p>
+      </div>
+
+      <div class="why-card">
+        <div class="icn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="7" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 21v-2a5 5 0 0 1 5-5h2a5 5 0 0 1 5 5v2M15 21v-1.5a4 4 0 0 1 4-4H21"/></svg>
+        </div>
+        <h3>Personnel formé &amp; encadré</h3>
+        <p>Chaque intervention est supervisée. Notre équipe est uniformée, identifiée, et formée aux protocoles 3D (DDD).</p>
+      </div>
+
+      <div class="why-card">
+        <div class="icn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l3-9 4 18 3-9h4"/></svg>
+        </div>
+        <h3>Devis personnalisé en 2h</h3>
+        <p>Envoyez-nous un message WhatsApp. Visite gratuite si nécessaire. Tarification claire, sans surprise.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== SERVICES ========== -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="svc-head">
+      <div class="section-head" style="margin-bottom:0">
+        <span class="eyebrow">Nos prestations</span>
+        <h2>9 spécialités, une seule équipe.</h2>
+      </div>
+      <a href="https://wa.me/221775526419" class="btn-ghost" target="_blank" rel="noopener">Demander un devis
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 12h12M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+
+    <div class="svc-grid">
+
+      <!-- Flagship -->
+      <div class="svc flagship">
+        <div class="left">
+          <span class="pill">Service signature</span>
+          <div class="icn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 7h14M5 12h14M5 17h14"/><circle cx="7" cy="7" r="1.5" fill="currentColor"/><circle cx="12" cy="12" r="1.5" fill="currentColor"/><circle cx="17" cy="17" r="1.5" fill="currentColor"/></svg>
+          </div>
+          <h3>Nettoyage climatisation à l'azote</h3>
+          <p>Machine spéciale azote pour décrasser en profondeur les unités intérieures et extérieures. Air sain, performance retrouvée, jusqu'à 30% d'économie d'énergie.</p>
+          <span class="arrow">Découvrir le procédé
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 12h12M13 6l6 6-6 6"/></svg>
+          </span>
+        </div>
+        <div class="right">
+          <span class="tag">visuel · machine azote en intervention</span>
+        </div>
+      </div>
+
+      <div class="svc">
+        <span class="num">01</span>
+        <div class="icn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4M16 2v4M3 9h18M5 6h14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z"/><path d="M9 14l2 2 4-4"/></svg>
+        </div>
+        <h3>Désinsectisation</h3>
+        <p>Cafards, moustiques, fourmis, termites — traitement ciblé et durable.</p>
+        <span class="arrow">En savoir plus <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 12h12M13 6l6 6-6 6"/></svg></span>
+      </div>
+
+      <div class="svc">
+        <span class="num">02</span>
+        <div class="icn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></svg>
+        </div>
+        <h3>Désinfection</h3>
+        <p>Protocoles hospitaliers, surfaces de contact, virus et bactéries.</p>
+        <span class="arrow">En savoir plus <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 12h12M13 6l6 6-6 6"/></svg></span>
+      </div>
+
+      <div class="svc">
+        <span class="num">03</span>
+        <div class="icn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18s2-3 8-3 8 3 8 3"/><circle cx="8" cy="10" r="1.5"/><circle cx="16" cy="10" r="1.5"/><path d="M3 14c0-3 4-5 9-5s9 2 9 5"/></svg>
+        </div>
+        <h3>Dératisation</h3>
+        <p>Rats, souris, rongeurs. Identification, pièges et suivi terrain.</p>
+        <span class="arrow">En savoir plus <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 12h12M13 6l6 6-6 6"/></svg></span>
+      </div>
+
+      <div class="svc">
+        <span class="num">04</span>
+        <div class="icn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 18l4 3M21 18l-4 3M7 9h10M7 13h6"/></svg>
+        </div>
+        <h3>Nettoyage professionnel</h3>
+        <p>Bureaux, locaux, surfaces commerciales. Forfaits ponctuels ou récurrents.</p>
+        <span class="arrow">En savoir plus <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 12h12M13 6l6 6-6 6"/></svg></span>
+      </div>
+
+      <div class="svc">
+        <span class="num">05</span>
+        <div class="icn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18V9a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3v9"/><path d="M2 18h20M6 18v2M18 18v2"/><path d="M7 14h10"/></svg>
+        </div>
+        <h3>Nettoyage canapé</h3>
+        <p>Injection-extraction. Élimination des taches, acariens et odeurs.</p>
+        <span class="arrow">En savoir plus <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 12h12M13 6l6 6-6 6"/></svg></span>
+      </div>
+
+      <div class="svc">
+        <span class="num">06</span>
+        <div class="icn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M3 10h18M3 14h18M7 6v12M17 6v12"/></svg>
+        </div>
+        <h3>Nettoyage tapis</h3>
+        <p>Tous formats. Lavage, dépoussiérage, désinfection et séchage rapide.</p>
+        <span class="arrow">En savoir plus <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 12h12M13 6l6 6-6 6"/></svg></span>
+      </div>
+
+      <div class="svc">
+        <span class="num">07</span>
+        <div class="icn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="14" rx="3"/><path d="M7 6V4a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2"/><path d="M7 12h10M7 16h6"/></svg>
+        </div>
+        <h3>Nettoyage matelas</h3>
+        <p>Traitement anti-acariens, anti-taches. Idéal pour chambres et hôtels.</p>
+        <span class="arrow">En savoir plus <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 12h12M13 6l6 6-6 6"/></svg></span>
+      </div>
+
+      <div class="svc">
+        <span class="num">08</span>
+        <div class="icn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="11" rx="1"/><path d="M3 9h18M7 5v11M11 5v11M15 5v11M19 5v11M8 19l-2 3M16 19l2 3"/></svg>
+        </div>
+        <h3>Nettoyage panneaux solaires</h3>
+        <p>Performance maximale. Rinçage à l'eau déminéralisée, sans rayure.</p>
+        <span class="arrow">En savoir plus <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 12h12M13 6l6 6-6 6"/></svg></span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========== PRODUCTS / SOLUTIONS ========== -->
+<section class="products" id="produits">
+  <div class="container">
+    <div class="products-bg">
+      <div class="section-head products-head" style="margin-bottom:0">
+        <span class="eyebrow">Produits &amp; solutions</span>
+        <h2>Au-delà de l'intervention :<br>les bons produits, le bon conseil.</h2>
+        <p>Sawara Entreprise propose également une sélection de solutions anti-nuisibles disponibles à Dakar, accompagnée de conseils d'utilisation par des techniciens formés. Vous n'achetez pas un produit au hasard — vous repartez avec une solution adaptée à votre situation.</p>
+
+        <div class="geo-card">
+          <div class="ic">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="10" r="3"/><path d="M12 22s-7-7-7-12a7 7 0 0 1 14 0c0 5-7 12-7 12z"/></svg>
+          </div>
+          <p><strong>Sawara Entreprise</strong> est une entreprise basée à Dakar spécialisée dans la désinsectisation, la désinfection, la dératisation, le nettoyage professionnel et la vente de solutions anti-nuisibles — terre de diatomée, pièges à souris, seringues anti-cafards et insecticides anti-fourmis.</p>
+        </div>
+      </div>
+
+      <div class="products-grid">
+
+        <div class="product">
+          <div class="visual">
+            <div class="icn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h16M6 20l1-8a5 5 0 0 1 10 0l1 8"/><circle cx="9" cy="14" r="1"/><circle cx="13" cy="11" r="1"/><circle cx="15" cy="15" r="1"/><circle cx="11" cy="17" r="1"/></svg>
+            </div>
+            <span class="ph">visuel produit</span>
+          </div>
+          <span class="tag">Naturel</span>
+          <h3>Terre de diatomée</h3>
+          <p>Poudre minérale naturelle, sans solvant. Solution adaptée pour cafards, fourmis et insectes rampants — application ciblée recommandée.</p>
+          <a href="https://wa.me/221775526419?text=Bonjour,%20je%20souhaite%20des%20informations%20sur%20la%20terre%20de%20diatomée" class="ask" target="_blank" rel="noopener">
+            Demander conseil
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 12h12M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+
+        <div class="product">
+          <div class="visual">
+            <div class="icn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="10" width="18" height="9" rx="2"/><path d="M7 10V7a3 3 0 0 1 6 0M14 14h4M14 17h2"/></svg>
+            </div>
+            <span class="ph">visuel produit</span>
+          </div>
+          <span class="tag">Mécanique</span>
+          <h3>Pièges à souris</h3>
+          <p>Modèles mécaniques et à appâts, calibrés selon la zone à traiter. Conseil sur l'emplacement et la fréquence de vérification.</p>
+          <a href="https://wa.me/221775526419?text=Bonjour,%20je%20souhaite%20des%20informations%20sur%20les%20pièges%20à%20souris" class="ask" target="_blank" rel="noopener">
+            Demander conseil
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 12h12M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+
+        <div class="product">
+          <div class="visual">
+            <div class="icn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3l5 5-9 9-5-5 9-9z"/><path d="M11 8l5 5M3 21l4-4M7 17l3 3"/></svg>
+            </div>
+            <span class="ph">visuel produit</span>
+          </div>
+          <span class="tag">Gel professionnel</span>
+          <h3>Seringues anti-cafards</h3>
+          <p>Gel insecticide en applicateur précis. Traitement ciblé des zones de passage — méthode discrète pour locaux pro et habitat.</p>
+          <a href="https://wa.me/221775526419?text=Bonjour,%20je%20souhaite%20des%20informations%20sur%20les%20seringues%20anti-cafards" class="ask" target="_blank" rel="noopener">
+            Demander conseil
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 12h12M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+
+        <div class="product">
+          <div class="visual">
+            <div class="icn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6v4l4 3v8a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-8l4-3V3z"/><path d="M11 12h2v6h-2z"/></svg>
+            </div>
+            <span class="ph">visuel produit</span>
+          </div>
+          <span class="tag">Concentré pro</span>
+          <h3>Insecticides anti-fourmis</h3>
+          <p>Formulations concentrées pour usage professionnel ou domestique. Dilution et zones de pulvérisation expliquées au cas par cas.</p>
+          <a href="https://wa.me/221775526419?text=Bonjour,%20je%20souhaite%20des%20informations%20sur%20les%20insecticides%20anti-fourmis" class="ask" target="_blank" rel="noopener">
+            Demander conseil
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 12h12M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+
+        <div class="product">
+          <div class="visual">
+            <div class="icn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="6" width="16" height="14" rx="2"/><path d="M4 11h16M9 6V3M15 6V3M8 16h2M12 16h2"/></svg>
+            </div>
+            <span class="ph">visuel produit</span>
+          </div>
+          <span class="tag">Traitement ciblé</span>
+          <h3>Solutions anti-punaises</h3>
+          <p>Protocole en plusieurs passages avec produits adaptés au matelas, sommier et zones de couture. Diagnostic préalable indispensable.</p>
+          <a href="https://wa.me/221775526419?text=Bonjour,%20je%20souhaite%20des%20informations%20sur%20les%20solutions%20anti-punaises" class="ask" target="_blank" rel="noopener">
+            Demander conseil
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 12h12M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+
+        <div class="product">
+          <div class="visual">
+            <div class="icn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v6M12 16v6M4 12h6M14 12h6M6.34 6.34l4.24 4.24M13.42 13.42l4.24 4.24M6.34 17.66l4.24-4.24M13.42 10.58l4.24-4.24"/></svg>
+            </div>
+            <span class="ph">visuel produit</span>
+          </div>
+          <span class="tag">Prévention</span>
+          <h3>Kit prévention &amp; conseil</h3>
+          <p>Audit rapide de votre logement ou local, recommandations sur les bons gestes, produits d'entretien adaptés au quotidien.</p>
+          <a href="https://wa.me/221775526419?text=Bonjour,%20je%20souhaite%20des%20informations%20sur%20la%20prévention%20anti-nuisibles" class="ask" target="_blank" rel="noopener">
+            Demander conseil
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 12h12M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- WhatsApp photo callout -->
+      <div class="wa-photo">
+        <div class="ic" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="14" rx="3"/><circle cx="12" cy="13" r="4"/><path d="M8 6l1.5-2h5L16 6"/></svg>
+        </div>
+        <div class="txt">
+          <h3>Vous ne savez pas quel produit choisir&nbsp;?<br>Envoyez-nous une photo sur WhatsApp.</h3>
+          <p>Un technicien identifie le nuisible, vous oriente vers la bonne solution et explique comment l'utiliser. Réponse en moyenne en moins de 2 heures.</p>
+        </div>
+        <a href="https://wa.me/221775526419?text=Bonjour,%20voici%20une%20photo%20pour%20identifier%20le%20bon%20produit" class="btn-primary" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.4 5L2 22l5.1-1.3c1.5.8 3.2 1.3 4.9 1.3 5.5 0 10-4.5 10-10S17.5 2 12 2Zm5.5 12.4c-.2.7-1.4 1.3-1.9 1.4-.9.1-1.6 0-3.3-.7-2.9-1.3-4.8-4.2-4.9-4.4-.2-.2-1.2-1.6-1.2-3.1s.7-2.2 1-2.5c.3-.3.6-.4.8-.4h.6c.2 0 .5-.1.7.5.3.6.9 2.1 1 2.2.1.1.1.3 0 .4-.4.7-.8.7-.6 1 .8 1 1.6 1.5 2.5 2 .3.1.4.1.6-.1.2-.2.7-.8.9-1.1.2-.3.4-.3.7-.2.3.1 1.7.8 2 .9.3.1.5.2.6.3.1.1.1.7-.2 1.4Z"/></svg>
+          Demander le bon produit
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========== CTA BANNER ========== -->
+<section class="cta-banner" id="contact">
+  <div class="container">
+    <div class="cta-inner">
+      <div>
+        <h2>Un besoin urgent ?<br>Parlons-en sur WhatsApp.</h2>
+        <p>Devis gratuit en moins de 2 heures. Intervention possible le jour même selon disponibilité.</p>
+      </div>
+      <a href="https://wa.me/221775526419" class="btn-dark" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.4 5L2 22l5.1-1.3c1.5.8 3.2 1.3 4.9 1.3 5.5 0 10-4.5 10-10S17.5 2 12 2Zm5.5 12.4c-.2.7-1.4 1.3-1.9 1.4-.9.1-1.6 0-3.3-.7-2.9-1.3-4.8-4.2-4.9-4.4-.2-.2-1.2-1.6-1.2-3.1s.7-2.2 1-2.5c.3-.3.6-.4.8-.4h.6c.2 0 .5-.1.7.5.3.6.9 2.1 1 2.2.1.1.1.3 0 .4-.4.7-.8.7-.6 1 .8 1 1.6 1.5 2.5 2 .3.1.4.1.6-.1.2-.2.7-.8.9-1.1.2-.3.4-.3.7-.2.3.1 1.7.8 2 .9.3.1.5.2.6.3.1.1.1.7-.2 1.4Z"/></svg>
+        77 552 64 19
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="site">
+  <div class="container">
+    <div class="ft-grid">
+      <div class="ft-brand">
+        <a href="#" class="brand">
+          <span class="mark"><img src="assets/sawara-icon.png" alt=""></span>
+          <span class="word" style="color:#fff">Sawara<small style="color:rgba(255,255,255,.5)">Entreprise · Dakar</small></span>
+        </a>
+        <p>Spécialiste de la 3D (Désinsectisation, Désinfection, Dératisation) et du nettoyage professionnel à Dakar et en banlieue.</p>
+      </div>
+      <div class="ft-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#">Désinsectisation</a></li>
+          <li><a href="#">Désinfection</a></li>
+          <li><a href="#">Dératisation</a></li>
+          <li><a href="#">Nettoyage pro</a></li>
+          <li><a href="#">Clim azote</a></li>
+        </ul>
+      </div>
+      <div class="ft-col">
+        <h4>Produits</h4>
+        <ul>
+          <li><a href="#produits">Terre de diatomée</a></li>
+          <li><a href="#produits">Pièges à souris</a></li>
+          <li><a href="#produits">Seringues anti-cafards</a></li>
+          <li><a href="#produits">Anti-fourmis</a></li>
+          <li><a href="#produits">Anti-punaises</a></li>
+        </ul>
+      </div>
+      <div class="ft-col">
+        <h4>Entreprise</h4>
+        <ul>
+          <li><a href="#">À propos</a></li>
+          <li><a href="#">Références</a></li>
+          <li><a href="#">Avis Google</a></li>
+          <li><a href="#">Lettres de reco</a></li>
+        </ul>
+      </div>
+      <div class="ft-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="https://wa.me/221775526419">WhatsApp · 77 552 64 19</a></li>
+          <li><a href="#">contact@sawara-entreprise.com</a></li>
+          <li>Dakar, Sénégal</li>
+          <li>Lun – Sam · 8h – 19h</li>
+        </ul>
+      </div>
+    </div>
+    <div class="ft-bottom">
+      <span>© 2026 Sawara Entreprise. Tous droits réservés.</span>
+      <span>www.sawara-entreprise.com</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Hero rotating word — sober fade + slide, animated container width
+  (function(){
+    const WORDS = ['cafards','fourmis','punaises de lit','rongeurs','moustiques','termites'];
+    const rot = document.querySelector('.rot');
+    if(!rot) return;
+    const word = rot.querySelector('.rot-word');
+
+    function measureWidth(text){
+      const ghost = document.createElement('span');
+      ghost.className = 'rot-word';
+      ghost.textContent = text;
+      ghost.style.cssText = 'position:absolute;visibility:hidden;left:-9999px;white-space:nowrap;font-style:italic;';
+      rot.appendChild(ghost);
+      const w = ghost.getBoundingClientRect().width;
+      ghost.remove();
+      return Math.ceil(w) + 2;
+    }
+
+    function setWidth(){ rot.style.width = measureWidth(WORDS[i]) + 'px'; }
+
+    let i = 0;
+    // Initial width set after fonts settle to avoid layout snap
+    requestAnimationFrame(setWidth);
+    if(document.fonts && document.fonts.ready) document.fonts.ready.then(setWidth);
+    window.addEventListener('resize', setWidth);
+
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const dwell = 2000;
+    const trans = reduce ? 0 : 280;
+
+    setInterval(function(){
+      const next = WORDS[(i + 1) % WORDS.length];
+      // fade current out (up)
+      word.classList.add('is-out');
+      // animate width
+      rot.style.width = measureWidth(next) + 'px';
+      setTimeout(function(){
+        i = (i + 1) % WORDS.length;
+        word.textContent = next;
+        // pre-position below for entry
+        word.classList.remove('is-out');
+        word.classList.add('is-in');
+        // next frame: animate to natural position
+        requestAnimationFrame(function(){
+          requestAnimationFrame(function(){
+            word.classList.remove('is-in');
+          });
+        });
+      }, trans);
+    }, dwell);
+  })();
+</script>
+
+</body>
+</html>
