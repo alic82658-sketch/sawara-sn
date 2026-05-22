@@ -532,3 +532,22 @@ footer.site{background:var(--green-900);color:rgba(255,255,255,.7);padding:48px 
 
 /* ---------- 15. Selection ---------- */
 ::selection{background:var(--green-500);color:#fff}
+
+/* ---------- 16. Trust logos ---------- */
+.trust-logos-section{padding:60px 0;background:#ffffff;overflow:hidden}
+.trust-logos-section .section-label{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--green-600);margin-bottom:4px}
+.trust-logos-section h2{font-family:'Bricolage Grotesque',sans-serif;font-weight:700;letter-spacing:-.025em;font-size:clamp(26px,3.8vw,44px);line-height:1.07;color:var(--green-900);margin:10px 0 14px;max-width:560px}
+.trust-logos-section p{color:var(--ink-2);font-size:16px;line-height:1.65;margin-top:10px;max-width:680px;margin-bottom:30px}
+.trust-marquee{width:100%;overflow:hidden;border:1px solid #e4eade;background:#f7fbf4;border-radius:24px;padding:18px 0}
+.trust-track{display:flex;align-items:center;gap:18px;width:max-content;animation:trustMarquee 34s linear infinite}
+.trust-marquee:hover .trust-track{animation-play-state:paused}
+.trust-logo{width:190px;height:90px;border-radius:18px;background:#ffffff;border:1px solid #dcebd4;box-shadow:0 4px 14px rgba(18,59,34,.06);display:flex;align-items:center;justify-content:center;padding:18px;flex:0 0 auto}
+.trust-logo img{max-width:100%;max-height:54px;object-fit:contain;filter:grayscale(1);opacity:.76;transition:filter .2s ease,opacity .2s ease,transform .2s ease}
+.trust-logo:hover img{filter:grayscale(0);opacity:1;transform:scale(1.03)}
+@keyframes trustMarquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media(max-width:700px){
+  .trust-logos-section{padding:44px 0}
+  .trust-track{animation-duration:26s}
+  .trust-logo{width:150px;height:74px;padding:14px}
+  .trust-logo img{max-height:44px}
+}
