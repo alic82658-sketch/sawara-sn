@@ -63,6 +63,10 @@ button{font:inherit;color:inherit;border:0;background:none;cursor:pointer}
   vertical-align:baseline;color:#6FBF3A;
   transition:width .45s cubic-bezier(.4,0,.2,1);
   will-change:width;
+  min-width:280px;white-space:nowrap;text-align:left;
+}
+@media(max-width:999px){
+  .rot{min-width:auto;display:inline;white-space:normal}
 }
 .rot::after{
   content:"";position:absolute;left:0;right:0;bottom:.05em;height:.10em;
