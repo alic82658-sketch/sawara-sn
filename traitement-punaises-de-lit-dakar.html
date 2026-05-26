@@ -439,22 +439,53 @@
 /* =====================
    FAQ
    ===================== */
-.tc-faq { margin-top: 32px; border-radius: var(--r-lg); overflow: hidden; background: #fff; box-shadow: var(--shadow-sm) }
-.tc-faq-item { border-bottom: 1px solid #edf2e8 }
-.tc-faq-item:last-child { border-bottom: none }
-.tc-faq-q {
-  width: 100%; background: none; border: none;
-  padding: 20px 24px; display: flex; justify-content: space-between; align-items: center; gap: 16px;
-  text-align: left; cursor: pointer;
-  font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 16.5px; color: var(--green-900);
-  transition: background .15s;
+.tc-faq-list {
+  margin-top: 24px;
+  display: grid;
+  gap: 12px;
 }
-.tc-faq-q:hover { background: var(--green-50) }
-.tc-faq-q svg { width: 18px; height: 18px; flex-shrink: 0; color: var(--green-600); transition: transform .25s ease }
-.tc-faq-item.open .tc-faq-q svg { transform: rotate(45deg) }
-.tc-faq-a { max-height: 0; overflow: hidden; transition: max-height .32s cubic-bezier(.4,0,.2,1) }
-.tc-faq-item.open .tc-faq-a { max-height: 400px }
-.tc-faq-a-inner { padding: 0 24px 20px; font-size: 15px; color: var(--ink-2); line-height: 1.65 }
+
+.tc-faq-item {
+  background: #ffffff;
+  border: 1px solid rgba(15, 77, 48, 0.12);
+  border-radius: 18px;
+  padding: 0;
+  box-shadow: 0 10px 30px rgba(15, 77, 48, 0.06);
+  overflow: hidden;
+}
+
+.tc-faq-item summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 18px 22px;
+  font-weight: 800;
+  color: var(--ink);
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.tc-faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.tc-faq-item summary::after {
+  content: "+";
+  font-size: 22px;
+  color: var(--green);
+  flex: 0 0 auto;
+}
+
+.tc-faq-item[open] summary::after {
+  content: "−";
+}
+
+.tc-faq-item p {
+  margin: 0;
+  padding: 0 22px 18px;
+  color: var(--muted);
+  line-height: 1.7;
+}
 
 /* =====================
    CTA BANNER
@@ -589,7 +620,52 @@
 <section class="tc-section-dark" id="methode"><div class="container"><div class="tc-grid"><div><h2 class="tc-h2">La méthode Sawara contre les punaises de lit</h2><p class="tc-p">Sawara intervient avec un protocole professionnel adapté à la configuration du logement. Le traitement cible les zones sensibles : matelas, sommier, cadre de lit, tête de lit, canapés, plinthes, fissures et recoins proches du couchage. L’objectif est de traiter les zones touchées, de limiter la dispersion et de conseiller le client sur les gestes à suivre avant et après l’intervention.</p><div class="tc-steps"><div class="tc-step"><div class="tc-step-num">1</div><div class="tc-step-body"><h3>Diagnostic des zones touchées</h3></div></div><div class="tc-step"><div class="tc-step-num">2</div><div class="tc-step-body"><h3>Préparation du logement</h3></div></div><div class="tc-step"><div class="tc-step-num">3</div><div class="tc-step-body"><h3>Traitement ciblé des zones sensibles</h3></div></div><div class="tc-step"><div class="tc-step-num">4</div><div class="tc-step-body"><h3>Conseils après intervention</h3></div></div><div class="tc-step"><div class="tc-step-num">5</div><div class="tc-step-body"><h3>Suivi possible selon la situation</h3></div></div></div></div><div class="tc-img"><img src="assets/images/punaises/traitement-punaises-lit-cadre-lit-sawara-dakar.webp" alt="traitement professionnel des punaises de lit sur un cadre de lit à Dakar" width="620" height="465" loading="lazy"></div></div></div></section>
 <section class="tc-section"><div class="container"><h2 class="tc-h2">Ce qu’il faut éviter quand on pense avoir des punaises de lit</h2><p class="tc-p">Il est tentant de pulvériser un insecticide partout, de déplacer le matelas ou de sortir les meubles immédiatement. Mais ces gestes peuvent disperser les punaises de lit dans d’autres pièces et rendre le traitement plus compliqué.</p><div class="tc-list"><div class="tc-list-item">Déplacer le matelas sans protection</div><div class="tc-list-item">Changer de chambre sans précaution</div><div class="tc-list-item">Secouer le linge dans toute la maison</div><div class="tc-list-item">Utiliser plusieurs produits au hasard</div><div class="tc-list-item">Jeter les meubles sans diagnostic</div><div class="tc-list-item">Attendre trop longtemps avant d’agir</div></div></div></section>
 <section class="tc-section-alt" id="zones"><div class="container"><h2 class="tc-h2">Zones d’intervention pour le traitement punaises de lit à Dakar</h2><p class="tc-p">Sawara intervient principalement dans le Grand Dakar. Des déplacements sont possibles selon la nature de la demande, l’urgence et l’organisation du déplacement.</p><p class="tc-p"><strong>Dakar centre :</strong> Plateau, Médina, Fann - Point E, Mermoz, Sacré-Cœur, Ouakam - Ngor, Almadies.<br><strong>Banlieue :</strong> Pikine, Guédiawaye, Parcelles, Thiaroye, Rufisque, Bargny.<br><strong>Sur demande :</strong> Thiès, Mbour - Saly, Diamniadio, Saint-Louis, autres zones.</p></div></section>
-<section class="tc-section" id="faq"><div class="container"><h2 class="tc-h2">FAQ sur le traitement punaises de lit à Dakar</h2><div class="tc-faq"><div class="tc-faq-item open"><button class="tc-faq-q" aria-expanded="true">Comment savoir si j’ai des punaises de lit ?</button><div class="tc-faq-a" style="max-height:220px"><div class="tc-faq-a-inner">Des piqûres nocturnes répétées, de petites traces sur les draps et une gêne persistante peuvent orienter vers une présence à confirmer par inspection.</div></div></div><div class="tc-faq-item"><button class="tc-faq-q">Est-ce que les punaises de lit vivent seulement dans les matelas ?</button></div><div class="tc-faq-item"><button class="tc-faq-q">Faut-il quitter le logement pendant le traitement ?</button></div><div class="tc-faq-item"><button class="tc-faq-q">Combien coûte un traitement punaises de lit à Dakar ?</button></div><div class="tc-faq-item"><button class="tc-faq-q">Une seule intervention suffit-elle toujours ?</button></div><div class="tc-faq-item"><button class="tc-faq-q">Que faut-il faire avant l’arrivée du technicien ?</button></div><div class="tc-faq-item"><button class="tc-faq-q">Les hôtels et appartements meublés peuvent-ils faire appel à Sawara ?</button></div></div></div></section>
+<section class="tc-section" id="faq">
+  <div class="container">
+    <div style="max-width: 720px; margin: 0 auto;">
+      <span class="eyebrow">Questions fréquentes</span>
+      <h2 class="tc-h2">FAQ sur le traitement punaises de lit à Dakar</h2>
+      <p class="tc-p">Les questions que posent le plus souvent nos clients avant une intervention.</p>
+
+      <div class="tc-faq-list">
+        <details class="tc-faq-item">
+          <summary>Comment savoir si j’ai des punaises de lit ?</summary>
+          <p>Piqûres au réveil, petites traces noires sur le matelas, taches de sang sur les draps, démangeaisons ou présence de petits insectes près du lit peuvent indiquer une infestation. Un diagnostic permet de confirmer la situation.</p>
+        </details>
+
+        <details class="tc-faq-item">
+          <summary>Est-ce que les punaises de lit vivent seulement dans les matelas ?</summary>
+          <p>Non. Elles peuvent aussi se cacher dans le sommier, la tête de lit, les canapés, les fissures, les plinthes, les prises proches du lit, les bagages ou certains meubles proches du couchage.</p>
+        </details>
+
+        <details class="tc-faq-item">
+          <summary>Faut-il quitter le logement pendant le traitement ?</summary>
+          <p>Selon la configuration du logement et le type de traitement appliqué, une absence temporaire peut être conseillée. Sawara vous donne les consignes précises avant l’intervention.</p>
+        </details>
+
+        <details class="tc-faq-item">
+          <summary>Combien coûte un traitement punaises de lit à Dakar ?</summary>
+          <p>Le prix dépend de la surface, du niveau d’infestation, du nombre de pièces touchées et de l’urgence. Le plus simple est d’envoyer une photo ou de décrire la situation pour obtenir un devis adapté.</p>
+        </details>
+
+        <details class="tc-faq-item">
+          <summary>Une seule intervention suffit-elle toujours ?</summary>
+          <p>Pas toujours. Les punaises de lit sont résistantes et peuvent se cacher dans des zones difficiles d’accès. Selon le niveau d’infestation, un suivi ou une deuxième intervention peut être recommandé.</p>
+        </details>
+
+        <details class="tc-faq-item">
+          <summary>Que faut-il faire avant l’arrivée du technicien ?</summary>
+          <p>Il faut éviter de déplacer le matelas ou les meubles sans conseil. Sawara vous indique les gestes à faire avant l’intervention pour limiter la dispersion et faciliter le traitement.</p>
+        </details>
+
+        <details class="tc-faq-item">
+          <summary>Les hôtels et appartements meublés peuvent-ils faire appel à Sawara ?</summary>
+          <p>Oui. Sawara intervient pour les particuliers, hôtels, auberges, appartements meublés, résidences et bailleurs qui souhaitent traiter une chambre ou plusieurs logements.</p>
+        </details>
+      </div>
+    </div>
+  </div>
+</section>
 <section class="tc-section-alt"><div class="container"><h2 class="tc-h2">Demander un devis gratuit</h2><p class="tc-p">Vous pensez avoir des punaises de lit dans une chambre, un appartement meublé, un hôtel ou un logement familial ? Envoyez une photo ou décrivez la situation sur WhatsApp. Sawara vous oriente vers la solution la plus adaptée.</p><a href="https://wa.me/221775526419" class="btn-primary" target="_blank" rel="noopener">77 552 64 19 — WhatsApp</a><div class="tc-links-grid" style="margin-top:20px"><a href="/desinsectisation-senegal.html" class="tc-link-card"><div class="tc-link-card-text"><strong>Désinsectisation au Sénégal</strong></div></a><a href="/traitement-cafards-dakar.html" class="tc-link-card"><div class="tc-link-card-text"><strong>Traitement cafards à Dakar</strong></div></a></div></div></section>
 <!-- ========== FOOTER ========== -->
 
@@ -646,21 +722,5 @@
 </footer>
 
 <script src="script.js"></script>
-<script>
-  document.querySelectorAll('.tc-faq-q').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const item = btn.closest('.tc-faq-item');
-      const isOpen = item.classList.contains('open');
-      document.querySelectorAll('.tc-faq-item.open').forEach(el => {
-        el.classList.remove('open');
-        el.querySelector('.tc-faq-q').setAttribute('aria-expanded', 'false');
-      });
-      if (!isOpen) {
-        item.classList.add('open');
-        btn.setAttribute('aria-expanded', 'true');
-      }
-    });
-  });
-</script>
 </body>
 </html>
