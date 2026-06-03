@@ -557,12 +557,18 @@ footer.site{background:var(--green-900);color:rgba(255,255,255,.7);padding:48px 
 }
 
 
+
 /* ===== MENU MOBILE HAMBURGER ===== */
 .nav-toggle{display:flex;flex-direction:column;justify-content:center;gap:5px;width:40px;height:40px;background:none;border:none;cursor:pointer;padding:6px;flex-shrink:0}
-.nav-toggle span{display:block;height:2px;width:100%;background:#1a3a2a;border-radius:2px;transition:transform .25s,opacity .25s}
+.nav-toggle span{display:block;height:2px;width:100%;background:var(--green-900);border-radius:2px;transition:transform .25s,opacity .25s}
 @media(min-width:1000px){.nav-toggle{display:none}}
-.nav-close{display:none}
-.mobile-nav{display:none;position:fixed;inset:0;background:#fff;z-index:9999;flex-direction:column;align-items:center;justify-content:center;gap:0}
+.mobile-nav{display:none;position:fixed;inset:0;background:var(--green-900);z-index:9999;flex-direction:column;align-items:center;justify-content:center;gap:0;padding:2rem}
 .mobile-nav.open{display:flex}
-.mobile-nav a{font-size:1.3rem;font-weight:600;color:#1a3a2a;padding:16px 32px;text-decoration:none;border-bottom:1px solid #f0f0f0;width:100%;text-align:center}
-.mobile-nav-close{position:absolute;top:1rem;right:1rem;background:none;border:none;font-size:2rem;cursor:pointer;color:#1a3a2a;line-height:1}
+.mobile-nav a{font-family:'Bricolage Grotesque',sans-serif;font-size:1.6rem;font-weight:700;color:#fff;padding:14px 32px;text-decoration:none;width:100%;text-align:center;border-bottom:1px solid rgba(255,255,255,.08);transition:color .2s,background .2s;letter-spacing:-.01em}
+.mobile-nav a:first-of-type{border-top:1px solid rgba(255,255,255,.08)}
+.mobile-nav a:hover{color:var(--green-400)}
+.mobile-nav a:last-child{margin-top:1rem;background:var(--green-500);border-radius:99px;border:none;color:#fff;font-size:1rem;padding:14px 32px}
+.mobile-nav a:last-child:hover{background:var(--green-400)}
+.mobile-nav-close{position:absolute;top:1.25rem;right:1.25rem;background:rgba(255,255,255,.1);border:none;border-radius:50%;width:40px;height:40px;display:flex;align-items:center;justify-content:center;cursor:pointer;color:#fff;font-size:1.2rem;line-height:1;transition:background .2s}
+.mobile-nav-close:hover{background:rgba(255,255,255,.2)}
+.mobile-nav-logo{margin-bottom:2rem;font-family:'Bricolage Grotesque',sans-serif;font-size:1.1rem;font-weight:700;color:rgba(255,255,255,.4);letter-spacing:.08em;text-transform:uppercase}
