@@ -57,3 +57,16 @@
     }, trans);
   }, DWELL);
 })();
+
+/* ===== MENU MOBILE HAMBURGER ===== */
+const navToggle = document.querySelector('.nav-toggle');
+if (navToggle) {
+  navToggle.addEventListener('click', () => {
+    document.body.classList.toggle('nav-open');
+  });
+  document.querySelectorAll('nav.primary a').forEach(link => {
+    link.addEventListener('click', () => {
+      document.body.classList.remove('nav-open');
+    });
+  });
+}
