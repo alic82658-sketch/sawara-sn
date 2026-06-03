@@ -58,15 +58,16 @@
   }, DWELL);
 })();
 
+
 /* ===== MENU MOBILE HAMBURGER ===== */
-const navToggle = document.querySelector('.nav-toggle');
-if (navToggle) {
-  navToggle.addEventListener('click', () => {
-    document.body.classList.toggle('nav-open');
+(function(){
+  var toggle = document.querySelector('.nav-toggle');
+  var mobileNav = document.querySelector('.mobile-nav');
+  var closeBtn = document.querySelector('.mobile-nav-close');
+  if(!toggle || !mobileNav) return;
+  toggle.addEventListener('click', function(){ mobileNav.classList.add('open'); });
+  if(closeBtn) closeBtn.addEventListener('click', function(){ mobileNav.classList.remove('open'); });
+  mobileNav.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){ mobileNav.classList.remove('open'); });
   });
-  document.querySelectorAll('nav.primary a').forEach(link => {
-    link.addEventListener('click', () => {
-      document.body.classList.remove('nav-open');
-    });
-  });
-}
+})();
