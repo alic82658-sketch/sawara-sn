@@ -572,3 +572,62 @@ footer.site{background:var(--green-900);color:rgba(255,255,255,.7);padding:48px 
 .mobile-nav-close{position:absolute;top:1.25rem;right:1.25rem;background:rgba(255,255,255,.1);border:none;border-radius:50%;width:40px;height:40px;display:flex;align-items:center;justify-content:center;cursor:pointer;color:#fff;font-size:1.2rem;line-height:1;transition:background .2s}
 .mobile-nav-close:hover{background:rgba(255,255,255,.2)}
 .mobile-nav-logo{margin-bottom:2rem;font-family:'Bricolage Grotesque',sans-serif;font-size:1.1rem;font-weight:700;color:rgba(255,255,255,.4);letter-spacing:.08em;text-transform:uppercase}
+
+/* ===== FIX GLOBAL ICONES SVG ===== */
+.icn {
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.icn svg {
+  display: block !important;
+  width: 22px !important;
+  height: 22px !important;
+  min-width: 22px !important;
+  min-height: 22px !important;
+  max-width: 22px !important;
+  max-height: 22px !important;
+  flex-shrink: 0;
+}
+
+.svc .icn {
+  width: 48px !important;
+  height: 48px !important;
+  min-width: 48px !important;
+  min-height: 48px !important;
+  max-width: 48px !important;
+  max-height: 48px !important;
+  display: grid !important;
+  place-items: center !important;
+  overflow: hidden !important;
+}
+
+.svc .icn svg {
+  width: 22px !important;
+  height: 22px !important;
+  min-width: 22px !important;
+  min-height: 22px !important;
+  max-width: 22px !important;
+  max-height: 22px !important;
+}
+
+.why-card .icn svg {
+  width: 24px !important;
+  height: 24px !important;
+}
+
+.product .visual .icn svg,
+.wa-photo .ic svg {
+  width: 28px !important;
+  height: 28px !important;
+}
+
+.svc .arrow svg,
+.btn-ghost svg,
+.btn-primary svg,
+.wa-btn svg,
+.hdr-phone svg,
+.geo-card .ic svg,
+.cred-item .ic svg {
+  flex-shrink: 0;
+}
