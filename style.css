@@ -103,7 +103,7 @@ header.site{
   box-shadow:0 2px 4px rgba(15,46,32,.08), inset 0 0 0 1px var(--line);
   flex-shrink:0;
 }
-.brand .mark img{width:130%;height:130%;object-fit:contain;object-position:center 35%}
+.brand .mark img{width:90%;height:90%;object-fit:contain;object-position:center}
 .brand .word{font-size:21px;line-height:1;letter-spacing:-.02em;color:var(--green-900)}
 .brand .word small{display:block;font-family:'Manrope';font-weight:500;font-size:10.5px;color:var(--ink-3);letter-spacing:.16em;text-transform:uppercase;margin-top:6px}
 nav.primary{display:none}
@@ -572,3 +572,53 @@ footer.site{background:var(--green-900);color:rgba(255,255,255,.7);padding:48px 
 .mobile-nav-close{position:absolute;top:1.25rem;right:1.25rem;background:rgba(255,255,255,.1);border:none;border-radius:50%;width:40px;height:40px;display:flex;align-items:center;justify-content:center;cursor:pointer;color:#fff;font-size:1.2rem;line-height:1;transition:background .2s}
 .mobile-nav-close:hover{background:rgba(255,255,255,.2)}
 .mobile-nav-logo{margin-bottom:2rem;font-family:'Bricolage Grotesque',sans-serif;font-size:1.1rem;font-weight:700;color:rgba(255,255,255,.4);letter-spacing:.08em;text-transform:uppercase}
+/* ===== FIX GLOBAL ICONES SVG ===== */
+.icn { overflow: hidden; flex-shrink: 0; }
+.icn svg {
+  display: block !important;
+  width: 22px !important; height: 22px !important;
+  min-width: 22px !important; min-height: 22px !important;
+  max-width: 22px !important; max-height: 22px !important;
+  flex-shrink: 0;
+}
+.svc .icn {
+  width: 48px !important; height: 48px !important;
+  min-width: 48px !important; min-height: 48px !important;
+  max-width: 48px !important; max-height: 48px !important;
+  display: grid !important; place-items: center !important;
+  overflow: hidden !important;
+}
+.svc .icn svg {
+  width: 22px !important; height: 22px !important;
+  min-width: 22px !important; min-height: 22px !important;
+  max-width: 22px !important; max-height: 22px !important;
+}
+.why-card .icn svg { width: 24px !important; height: 24px !important; }
+.product .visual .icn svg,
+.wa-photo .ic svg { width: 28px !important; height: 28px !important; }
+.svc .arrow svg, .btn-ghost svg, .btn-primary svg, .wa-btn svg,
+.hdr-phone svg, .geo-card .ic svg, .cred-item .ic svg { flex-shrink: 0; }
+/* ===== AFFINAGE BOUTONS + VISUEL CLIMATISATION ===== */
+.btn-ghost svg { width: 18px !important; height: 18px !important; }
+.svc.flagship .right img { width: 100%; height: 100%; object-fit: cover; display: block; }
+/* ===== BOUTON WHATSAPP FLOTTANT ===== */
+.wa-float{
+  position:fixed; right:20px; bottom:20px; z-index:900;
+  display:inline-flex; align-items:center;
+  background:var(--whatsapp); color:#fff; height:56px; border-radius:99px;
+  box-shadow:0 10px 28px rgba(37,211,102,.40), 0 2px 8px rgba(15,46,32,.16);
+  overflow:hidden; transition:transform .15s ease, box-shadow .2s ease;
+}
+.wa-float svg{ width:26px; height:26px; flex-shrink:0; margin:0 15px; }
+.wa-float-label{
+  white-space:nowrap; font-weight:700; font-size:14.5px;
+  max-width:0; opacity:0; overflow:hidden;
+  transition:max-width .3s ease, opacity .2s ease, margin .3s ease;
+}
+.wa-float:hover{ transform:translateY(-2px); box-shadow:0 16px 36px rgba(37,211,102,.5), 0 4px 10px rgba(15,46,32,.18); }
+.wa-float:hover .wa-float-label{ max-width:240px; opacity:1; margin-right:22px; }
+@media (max-width:700px){
+  .wa-float{ right:16px; bottom:16px; height:54px; }
+  .wa-float svg{ margin:0 14px; }
+  .wa-float-label{ display:none; }
+}
