@@ -1,0 +1,50 @@
+name: Generer le sitemap
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - '**.html'
+
+permissions:
+  contents: write
+
+jobs:
+  sitemap:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Generer sitemap.xml
+        run: |
+          BASE="https://sawara.sn"
+          {
+            echo '<?xml version="1.0" encoding="UTF-8"?>'
+            echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
+            for f in $(ls *.html | sort); do
+              d=$(git log -1 --format=%cs -- "$f")
+              [ -z "$d" ] && d=$(date +%F)
+              if [ "$f" = "index.html" ]; then
+                loc="$BASE/"
+              else
+                loc="$BASE/${f%.html}"
+              fi
+              echo "  <url><loc>$loc</loc><lastmod>$d</lastmod></url>"
+            done
+            echo '</urlset>'
+          } > sitemap.xml
+
+      - name: Commit si changement
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if ! git diff --quiet sitemap.xml; then
+            git add sitemap.xml
+            git commit -m "Mise a jour automatique du sitemap"
+            git push
+          else
+            echo "Sitemap inchange"
+          fi
