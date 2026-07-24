@@ -71,3 +71,60 @@
     a.addEventListener('click', function(){ mobileNav.classList.remove('open'); });
   });
 })();
+
+/* ===== FORMULAIRE DE DEVIS — CLOUDFLARE + RESEND ===== */
+(function () {
+  var form = document.querySelector('form[action*="formsubmit.co"]');
+  if (!form) return;
+
+  var submitButton = form.querySelector('button[type="submit"]');
+  var initialButtonHtml = submitButton ? submitButton.innerHTML : '';
+  var status = document.createElement('p');
+  status.setAttribute('role', 'status');
+  status.setAttribute('aria-live', 'polite');
+  status.style.cssText = 'margin-top:14px;font-size:14px;line-height:1.5;font-weight:600;';
+  form.appendChild(status);
+
+  form.addEventListener('submit', async function (event) {
+    event.preventDefault();
+
+    if (!form.reportValidity()) return;
+
+    if (submitButton) {
+      submitButton.disabled = true;
+      submitButton.textContent = 'Envoi en cours…';
+      submitButton.style.opacity = '0.7';
+      submitButton.style.cursor = 'wait';
+    }
+
+    status.textContent = '';
+
+    try {
+      var response = await fetch('/api/devis', {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      });
+
+      var result = await response.json();
+
+      if (!response.ok || !result.success) {
+        throw new Error(result.message || 'Impossible d’envoyer votre demande.');
+      }
+
+      status.style.color = '#0f6b3f';
+      status.textContent = result.message;
+      form.reset();
+    } catch (error) {
+      status.style.color = '#a12622';
+      status.textContent = error.message || 'Une erreur est survenue. Contactez-nous sur WhatsApp.';
+    } finally {
+      if (submitButton) {
+        submitButton.disabled = false;
+        submitButton.innerHTML = initialButtonHtml;
+        submitButton.style.opacity = '';
+        submitButton.style.cursor = '';
+      }
+    }
+  });
+})();
